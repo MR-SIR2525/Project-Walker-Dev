@@ -1,0 +1,1 @@
+{"format_version":"1.21.0","minecraft:single_block_feature":{"description":{"identifier":"pw:tall_grass"},"places_block":{"name":"minecraft:tallgrass","states":{"tall_grass_type":"tall"}},"enforce_placement_rules":true,"enforce_survivability_rules":false,"may_replace":["minecraft:air"]}}

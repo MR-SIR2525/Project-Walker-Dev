@@ -1,0 +1,1 @@
+{"format_version":"1.20.10","minecraft:recipe_shaped":{"description":{"identifier":"pw:steel_bat"},"tags":["crafting_table"],"pattern":["A","A","B"],"key":{"A":{"item":"pw:steel_ingot"},"B":{"item":"pw:steel_nugget"}},"unlock":[{"item":"pw:steel_ingot"}],"result":{"item":"pw:steel_bat"}}}

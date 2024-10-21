@@ -1,0 +1,1 @@
+{"format_version":"1.20.10","minecraft:recipe_shaped":{"description":{"identifier":"pw:car_key"},"tags":["crafting_table"],"pattern":[" C ","ABA","AAA"],"key":{"A":{"item":"pw:plastic_mass"},"B":{"item":"pw:aluminum_nugget"},"C":{"item":"pw:steel_nugget"}},"unlock":[{"item":"minecraft:white_wool"}],"result":{"item":"pw:car_key"}}}

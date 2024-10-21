@@ -1,0 +1,232 @@
+## Entidades
+entity.pw:crow.name=Corvo	#
+entity.pw:deer.name=Veado	#
+entity.pw:walker.name=Walker	#
+entity.pw:loot_civil.name=§dLoot Civil§r	#
+entity.pw:loot_medical.name=§dLoot Médico§r	#
+entity.pw:loot_military.name=§dLoot Militar§r	#
+entity.pw:bandit.name=Bandido	#
+entity.pw:survivor.name=Sobrevivente	#
+entity.pw:bullet.name=Bala	#
+entity.pw:thrown_flash_grenade.name=Granada de luz	#
+entity.pw:thrown_frag_grenade.name=Granada de fragmento	#
+entity.pw:thrown_smoke_grenade.name=Granada de fumaça	#
+entity.pw:m809.name=Caminhão M809	#
+entity.pw:sedan.name=Sedan	#
+
+## Items
+item.spawn_egg.entity.pw:crow.name=Invocar Corvo	#
+item.spawn_egg.entity.pw:deer.name=Invocar Cervo	#
+item.spawn_egg.entity.pw:walker.name=Invocar Walker	#
+item.spawn_egg.entity.pw:loot_civil.name=Invocar Loot Civil	#
+item.spawn_egg.entity.pw:loot_medical.name=Invocar Loot Médico	#
+item.spawn_egg.entity.pw:loot_military.name=Invocar Loot militar	#
+item.spawn_egg.entity.pw:bandit.name=Invocar Bandido	#
+item.spawn_egg.entity.pw:npc.name=Invocar NPC	#
+item.spawn_egg.entity.pw:survivor.name=Invocar Sobrevivente	#
+item.spawn_egg.entity.pw:m809.name=Invocar Caminhão M809	#
+item.spawn_egg.entity.pw:sedan.name=Invocar Sedan	#
+
+item.ammo_9mm.name=Caixa de cartucho 9mm	#
+item.ammo_12gauge.name=Caixa de cartucho 12gauge	#
+item.ammo_45acp.name=Caixa de cartucho .45 ACP	#
+item.ammo_50ae.name=Caixa de cartucho .50 AE	#
+item.ammo_57mm.name=Caixa de cartucho de 5,7mm	#
+item.ammo_545mm.name=Caixa de cartucho de 5,45mm	#
+item.ammo_556mm.name=Caixa de cartucho de 5,56mm	#
+item.ammo_762mm.name=Caixa de cartucho de 7,62mm	#
+item.ammo_792mm.name=Caixa de cartucho de 7,92mm	#
+item.ammo_860mm.name=Caixa de cartucho .338 Lapua Magnum	#
+item.rocket_rpg7.name=Foguete RPG-7 93mm	#
+
+item.scope.name=Mira de Sniper	#
+
+item.cargo_black.name=Carga Preta	#
+item.cargo_brown.name=Carga Marrom	#
+item.cargo_olive.name=Carga Oliva	#
+item.cargo_tan.name=Carga Bronzeado	#
+item.cargo_white.name=Carga Branca	#
+
+item.santa_hat.name=Gorro de Natal	#
+
+item.hoodie_black.name=Moletom Preta	#
+item.hoodie_blue.name=Moletom Azul	#
+item.hoodie_brown.name=Moletom Marrom	#
+item.hoodie_green.name=Moletom Verde	#
+item.hoodie_olive.name=Moletom Oliva	#
+item.hoodie_red.name=Moletom Vermelha	#
+item.hoodie_tan.name=Moletom Bronzeado 	#
+item.hoodie_white.name=Moletom Branca	#
+
+item.shirt_black.name=Camisa Preta	#
+item.shirt_blue.name=Camisa Azul	#
+item.shirt_brown.name=Camisa Marrom	#
+item.shirt_green.name=Camisa Verde	#
+item.shirt_olive.name=Camisa Oliva	#
+item.shirt_red.name=Camisa Vermelha	#
+item.shirt_tan.name=Camisa Bronzeado 	#
+item.shirt_white.name=Camisa Branca	#
+
+item.cola.name=Refrigerante Coca	#
+item.energy_drink.name=Energético	#
+item.kvas.name=Kvas	#
+item.pepsi.name=Refrigerante Pepsi	#
+item.sprite.name=Refrigerante Sprite	#
+item.water_bottle.name=Garrafa de Água	#
+item.water_bottle_empty.name=Garrafa de água vazia	#
+item.water_canteen.name=Cantil de Água	#
+item.water_canteen_empty.name=Cantil de Água Vazia	#
+
+item.banana.name=Banana	#
+item.canned_bacon_open.name=Bacon enlatado aberto	#
+item.canned_baked_beans_open.name=Feijão assado enlatado aberto	#
+item.canned_peaches_open.name=Pêssego enlatado aberto	#
+item.canned_sardines_open.name=Sardinha enlatada aberta	#
+item.canned_spaghetti_open.name=Espaguete enlatado aberto	#
+item.canned_tuna_open.name=Atum enlatado aberto	#
+item.canned_bacon.name=Bacon enlatado	#
+item.canned_baked_beans.name=Feijão assado enlatado	#
+item.canned_peaches.name=Pêssego enlatado	#
+item.canned_sardines.name=Sardinha enlatada	#
+item.canned_spaghetti.name=Espaguete enlatado	#
+item.canned_tuna.name=Atum enlatado	#
+item.cereal.name=Pacote de cereal	#
+item.cooked_flesh.name=Carne pobre cozida	#
+item.cooked_venison.name=Carne de veado cozida	#
+item.mandarine.name=Tangerina	#
+item.mre.name=MRE	#
+item.orange.name=Laranja	#
+item.pear.name=Pêra	#
+item.raw_venison.name=Carne de veado crua	#
+item.rice.name=Pacote de arroz	#
+item.sausage.name=Salsicha	#
+item.tomato.name=Tomate	#
+
+item.sawedoff.name=Espingarda serrada	#
+
+item.aluminum_ingot.name=Barra de alumínio	#
+item.aluminum_nugget.name=Pepita de alumínio	#
+item.bucket_petroleum.name=Balde de petróleo	#
+item.bullet_gunpowder.name=Pólvora de bala	#
+item.copper_nugget.name=Pepita de cobre	#
+item.plastic_mass.name=Massa de plastico	#
+item.plastic_plate.name=Placa de plástico	#
+item.steel_ingot.name=Barra de aço	#
+item.steel_nugget.name=Pepita de aço	#
+item.sulfur_powder.name=Po de enxofre	#
+
+item.aidkit.name=Kit de primeiros socorros	#
+item.bandage.name=Bandagem	#
+item.rag.name=Trapo	#
+item.splint.name=Tala de madeira	#
+item.syringe_cure.name=Seringa para cura de infecção	#
+item.syringe_morphine.name=Seringa de Morfina	#
+
+item.baseball_bat.name=Taco de beisebol	#
+item.baseball_bat_nailed.name=Taco de beisebol com pregos	#
+item.baton.name=Bastão de polícia	#
+item.board.name=Tábua	#
+item.board_nailed.name=Tábua com pregos	#
+item.cleaver.name=Cutelo	#
+item.crowbar.name=Pé de cabra	#
+item.diamond_bat.name=Taco de diamante	#
+item.engineer_shovel.name=Pá de engenheiro	#
+item.fire_axe.name=Machado de bombeiro	#
+item.golf_club.name=Taco de golfe	#
+item.hammer.name=Martelo	#
+item.hatchet.name=Machadinha	#
+item.hockey_stick.name=Taco de hóquei	#
+item.katana.name=Katana	#
+item.kitchen_knife.name=Faca de cozinha	#
+item.lead_pipe.name=Tubo de chumbo	#
+item.machete.name=Facão	#
+item.military_knife.name=Faca militar	#
+item.netherite_bat.name=Taco de netherite	#
+item.opener.name=Abridor de latas	#
+item.pan.name=Panela	#
+item.saw.name=Serra #
+item.screwdriver.name=Chave de fenda	#
+item.skalka.name=Rolo de passar	#
+item.sledge_hammer.name=Marreta	#
+item.splitting_axe.name=Machado de carne	#
+item.steel_bat.name=Taco de aço	#
+item.tactical_axe.name=Machado tático	#
+item.tire_iron.name=Tubo de pneu	#
+item.wrench.name=Chave inglesa	#
+
+item.car_key.name=Chave do carro	#
+item.deer_hide.name=Couro de veado	#
+item.dirty_rag.name=Pano sujo	#
+item.duct_tape.name=Fita adesiva	#
+item.empty_can.name=Lata vazia	#
+item.empty_syringe.name=Seringa vazia	#
+item.fuel.name=Galão de combustível (Inutilizável)	#
+item.guitar.name=Guitarra	#
+item.nails_bag.name=Saco de pregos	#
+
+item.flash_grenade.name=Granada de luz	#
+item.frag_grenade.name=Granada de fragmento	#
+item.smoke_grenade.name=Granada de fumaça	#
+
+item.gasmask.name=Máscara de gás	#
+item.helmet_spetsnaz.name=Capacete Spetsnaz	#
+item.helmet_motorcycle.name=Capacete de motocicleta	#
+item.helmet_military.name=Capacete militar	#
+item.helmet_bicycle.name=Capacete de bicicleta	#
+item.nv_goggles.name=Óculos de visão noturna	#
+item.vest_assault.name=Colete de assalto	#
+item.vest_field.name=Colete de campo	#
+item.vest_plate.name=Colete de placa	#
+item.vest_press.name=Colete de jornalista	#
+
+## Blocks
+tile.small_stones.name=Monte de pedrinhas	#
+tile.small_cobblestones.name=Monte de pedregulhos	#
+
+tile.aluminum_block.name=Bloco de alumínio	#
+tile.aluminum_ore.name=Minério de alumínio	#
+tile.steel_block.name=Bloco de aço	#
+tile.steel_ore.name=Minério de aço	#
+
+tile.armament_table.name=Mesa de armamento	#
+tile.barbed_wire.name=Arame farpado	#
+tile.celling_lamp.name=Luz de teto	#
+tile.camp_lantern.name=Lanterna de acampamento	#
+tile.chair.name=Cadeira	#
+tile.computer.name=Computador	#
+tile.crate.name=Caixote de madeira	#
+tile.ham_radio.name=Rádio improvisado	#
+tile.hazard_block.name=Bloco de perigo	#
+tile.hesco_olive.name=Hesco cor azeitona	#
+tile.hesco_snow.name=Hesco cor neve	#
+tile.hesco_tan.name=Hesco cor bronze	#
+tile.metal_rack.name=Estante de metal	#
+tile.radio.name=Rádio	#
+tile.table.name=Mesa	#
+tile.table_carpet.name=Mesa com lençol	#
+tile.water_pump.name=Bomba de água	#
+tile.wooden_barricade.name=Barricada de madeira	#
+
+## Game
+game.message.welcome_2=Dono/Dev: §b@GabrielAplok	#
+game.message.welcome_3=Fundador/Dev: §6@GabrielMODGuy	#
+game.message.welcome_4=Site: §ahttps://gabriel-aplok.com/projects/project-walker	#
+game.message.welcome_5=§o§cSobreviva a um apocalipse zumbi em Minecraft Bedrock!	#
+game.message.welcome_6=§aAviso: Este add-on foi desenvolvido apenas para o Minecraft 1.21.0, se você estiver em outra versão e tiver um bug, use a versão correta.
+
+game.message.broken leg=§cEssa não, quebrei minha perna.	#
+game.message.infected=§cEssa não, fui infectado.	#
+game.message.bleeding=§cEssa não, estou sangrando muito.	#
+game.message.toxic=§cEssa não, fui intoxicado.	#
+
+## Effects
+potion.hunger=Infectado	#
+potion.moveSlowdown=Fraturado	#
+potion.wither=Intoxicado	#
+potion.poison=Sangramento	#
+
+## UI
+action.hint.exit.pw:m809=Toque em pular para sair do caminhão M809	#
+action.hint.exit.console.pw:m809=Pressione :_input_key.jump: para sair do caminhão M809	#
+action.hint.exit.pw:sedan=Toque em pular para sair do Sedan	#
+action.hint.exit.console.pw:sedan=Pressione :_input_key.jump: para sair do Sedan	#

@@ -1,0 +1,1 @@
+{"format_version":"1.21.0","minecraft:item":{"description":{"identifier":"pw:ammo_57mm","menu_category":{"category":"equipment","group":"itemGroup.name.ammo"}},"components":{"minecraft:display_name":{"value":"item.ammo_57mm.name"},"minecraft:tags":{"tags":["pw:is_ammo"]},"minecraft:icon":"ammo_57mm","minecraft:max_stack_size":32}}}

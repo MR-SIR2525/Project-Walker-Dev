@@ -1,0 +1,1 @@
+{"format_version":"1.20.10","minecraft:recipe_shapeless":{"description":{"identifier":"minecraft:gunpowder"},"tags":["crafting_table"],"ingredients":[{"item":"pw:sulfur_powder"}],"unlock":[{"item":"pw:sulfur_powder"}],"result":[{"item":"minecraft:gunpowder"}]}}

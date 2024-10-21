@@ -1,0 +1,1 @@
+{"format_version":"1.20.10","minecraft:recipe_shaped":{"description":{"identifier":"pw:nails_bag"},"tags":["crafting_table"],"pattern":["AAA","BBB","AAA"],"key":{"A":{"item":"pw:plastic_mass"},"B":{"item":"pw:steel_nugget"}},"unlock":[{"item":"pw:plastic_mass"}],"result":{"item":"pw:nails_bag","count":2}}}

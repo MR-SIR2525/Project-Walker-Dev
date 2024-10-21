@@ -1,0 +1,1 @@
+{"format_version":"1.21.0","minecraft:block":{"description":{"identifier":"pw:aluminum_ore","menu_category":{"category":"nature","group":"itemGroup.name.material"}},"components":{"minecraft:destructible_by_explosion":{"explosion_resistance":2},"minecraft:destructible_by_mining":{"seconds_to_destroy":2},"minecraft:display_name":"tile.aluminum_ore.name","tag:metal":{}}}}

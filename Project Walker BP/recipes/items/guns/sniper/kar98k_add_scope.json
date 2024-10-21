@@ -1,0 +1,1 @@
+{"format_version":"1.20.10","minecraft:recipe_shaped":{"description":{"identifier":"pw:kar98k_add_scope"},"tags":["crafting_table"],"pattern":["B","A"],"key":{"B":{"item":"pw:scope"},"A":{"item":"pw:kar98k"}},"unlock":[{"item":"pw:kar98k"}],"result":{"item":"pw:kar98k_scoped"}}}

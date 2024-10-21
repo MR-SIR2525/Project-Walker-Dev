@@ -1,0 +1,34 @@
+Project Walker Information 1.8.12
+
+Creation Date: 24/11/2020.
+Update Date: 27/06/2024.
+MC Server Date: 26/12/2023.
+
+Developers:
+- Gabriel Aplok (Leader / Main-Developer).
+- HSK (Founder / Developer).
+
+Special Thanks for Contributions:
+- HSK (HSK Guns Owner & Project Walker Legacy Former Dev).
+- NekoZack (DeadZone Owner).
+- INISIANTENOOB (3D Vehicle Artist).
+- Jose (Builder).
+- 88ijjbr (Builder).
+- Scooter BoehMod (Decimation & BlockFront Owner).
+- Vic4Games (VMW Former Dev & Point Blank Owner).
+- Bedrock Community (Great Docs).
+
+Toola Used:
+- VS Code
+- bridge. v2
+- Audacity
+- Blochbench
+- Snowstorm
+- Libresprite
+
+Notes:
+- I hope you have common sense and DON'T steal ANYTHING from me.
+- All Texture's here's copyrighted, except some sounds like zombies screams by Bohemia Interactive.
+- Ah, this project is based on the "DayZ Standalone", "Road To Vostok" and "S.T.A.L.K.E.R.".
+
+I made this with love for u my baby <3!

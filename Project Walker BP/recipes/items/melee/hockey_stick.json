@@ -1,0 +1,1 @@
+{"format_version":"1.20.10","minecraft:recipe_shaped":{"description":{"identifier":"pw:hockey_stick"},"tags":["crafting_table"],"pattern":["AA","B ","A "],"key":{"A":{"item":"minecraft:stick"},"B":{"item":"pw:duct_tape"}},"unlock":[{"item":"minecraft:stick"}],"result":{"item":"pw:hockey_stick"}}}

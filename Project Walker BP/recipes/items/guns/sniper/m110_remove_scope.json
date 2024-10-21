@@ -1,0 +1,1 @@
+{"format_version":"1.20.10","minecraft:recipe_shaped":{"description":{"identifier":"pw:m110_remove_scope"},"tags":["crafting_table"],"pattern":["A"],"key":{"A":{"item":"pw:m110_scoped"}},"unlock":[{"item":"pw:m110_scoped"}],"result":[{"item":"pw:m110"},{"item":"pw:scope"}]}}

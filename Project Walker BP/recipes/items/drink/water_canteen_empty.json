@@ -1,0 +1,1 @@
+{"format_version":"1.20.10","minecraft:recipe_shaped":{"description":{"identifier":"pw:water_canteen_empty"},"tags":["crafting_table"],"pattern":[" A ","ABA","BAB"],"key":{"A":{"item":"minecraft:leather"},"B":{"item":"pw:plastic_mass"}},"unlock":[{"item":"minecraft:leather"}],"result":{"item":"pw:water_canteen_empty"}}}

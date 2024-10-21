@@ -1,0 +1,1 @@
+{"format_version":"1.20.10","minecraft:recipe_shaped":{"description":{"identifier":"pw:plastic_mass"},"tags":["crafting_table"],"pattern":["A"],"key":{"A":{"item":"pw:bucket_petroleum"}},"unlock":[{"item":"pw:bucket_petroleum"}],"result":{"item":"pw:plastic_mass","count":9}}}

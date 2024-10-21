@@ -1,0 +1,1 @@
+{"format_version":"1.20.0","minecraft:attachable":{"description":{"identifier":"pw:vest_press","materials":{"default":"entity_alphatest"},"textures":{"default":"textures/models/wearable/vest_press"},"geometry":{"default":"geometry.vest_press"},"scripts":{"parent_setup":"v.chest_layer_visible = 0;"},"render_controllers":["controller.render.default"]}}}

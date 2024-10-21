@@ -1,0 +1,1 @@
+{"format_version":"1.10.0","render_controllers":{"controller.render.player.scope":{"geometry":"geometry.scope","materials":[{"*":"material.scope"}],"textures":["texture.scope"],"on_fire_color":{},"is_hurt_color":{},"ignore_lighting":true}}}

@@ -1,0 +1,1 @@
+{"pools":[{"rolls":1,"entries":[{"type":"item","name":"pw:m4","weight":5,"functions":[{"function":"looting_enchant","count":{"min":0,"max":1}}]},{"type":"item","name":"pw:m16","weight":5,"functions":[{"function":"looting_enchant","count":{"min":0,"max":1}}]}]}]}

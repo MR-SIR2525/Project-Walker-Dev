@@ -1,0 +1,1 @@
+{"format_version":"1.20.10","minecraft:recipe_shaped":{"description":{"identifier":"pw:aluminum_ingot_from_nuggets"},"tags":["crafting_table"],"group":"aluminum_ingot","pattern":["AAA","AAA","AAA"],"key":{"A":{"item":"pw:aluminum_nugget"}},"unlock":[{"item":"pw:aluminum_nugget"}],"result":{"item":"pw:aluminum_ingot"}}}

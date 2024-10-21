@@ -1,0 +1,1 @@
+{"format_version":"1.21.0","animations":{"animation.camp_lantern.wield_fpp":{"loop":true,"bones":{"item":{"rotation":[120,60,-20],"position":[-10,12,-5]}}},"animation.camp_lantern.wield_tpp":{"loop":true,"bones":{"item":{"rotation":["17.5+math.sin(q.anim_time*120)*8","math.cos(q.anim_time*120)*2",0],"position":[0,8,-2],"scale":0.6}}}}}

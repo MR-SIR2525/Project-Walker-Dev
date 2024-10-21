@@ -1,0 +1,1 @@
+{"format_version":"1.20.10","minecraft:recipe_shaped":{"description":{"identifier":"pw:fuel"},"tags":["crafting_table"],"pattern":["AAA","BBB","AAA"],"key":{"A":{"item":"pw:plastic_mass"},"B":{"item":"pw:bucket_petroleum"}},"unlock":[{"item":"pw:bucket_petroleum"}],"result":{"item":"pw:fuel"}}}

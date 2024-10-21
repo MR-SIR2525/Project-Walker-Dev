@@ -1,0 +1,1 @@
+{"format_version":"1.20.10","minecraft:recipe_shaped":{"description":{"identifier":"pw:water_bottle_empty"},"tags":["crafting_table"],"pattern":[" A ","A A","AAA"],"key":{"A":{"item":"pw:plastic_mass"}},"unlock":[{"item":"pw:plastic_mass"}],"result":{"item":"pw:water_bottle_empty"}}}

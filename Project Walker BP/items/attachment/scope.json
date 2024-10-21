@@ -1,0 +1,1 @@
+{"format_version":"1.21.0","minecraft:item":{"description":{"identifier":"pw:scope","menu_category":{"category":"equipment","group":"itemGroup.name.attachment"}},"components":{"minecraft:display_name":{"value":"item.scope.name"},"minecraft:tags":{"tags":["pw:is_attachment"]},"minecraft:icon":"scope","minecraft:max_stack_size":1,"minecraft:hover_text_color":"red"}}}

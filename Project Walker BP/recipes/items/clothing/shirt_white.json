@@ -1,0 +1,1 @@
+{"format_version":"1.20.10","minecraft:recipe_shaped":{"description":{"identifier":"pw:shirt_white"},"tags":["crafting_table"],"pattern":["A A","AAA","AAA"],"key":{"A":{"item":"minecraft:white_wool"}},"unlock":[{"item":"minecraft:white_wool"}],"result":{"item":"pw:shirt_white"}}}

@@ -1,0 +1,1 @@
+{"format_version":"1.20.10","minecraft:recipe_shaped":{"description":{"identifier":"pw:awm_remove_scope"},"tags":["crafting_table"],"pattern":["A"],"key":{"A":{"item":"pw:awm_scoped"}},"unlock":[{"item":"pw:awm_scoped"}],"result":[{"item":"pw:awm"},{"item":"pw:scope"}]}}

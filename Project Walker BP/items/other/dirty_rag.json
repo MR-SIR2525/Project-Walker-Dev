@@ -1,0 +1,1 @@
+{"format_version":"1.21.0","minecraft:item":{"description":{"identifier":"pw:dirty_rag","menu_category":{"category":"items","group":"itemGroup.name.other"}},"components":{"minecraft:display_name":{"value":"item.dirty_rag.name"},"minecraft:icon":"dirty_rag"}}}

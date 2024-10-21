@@ -1,0 +1,1 @@
+{"format_version":"1.20.10","minecraft:recipe_shaped":{"description":{"identifier":"pw:tire_iron"},"tags":["crafting_table"],"pattern":["AA"," A"],"key":{"A":{"item":"pw:aluminum_ingot"}},"unlock":[{"item":"pw:aluminum_ingot"}],"result":{"item":"pw:tire_iron"}}}

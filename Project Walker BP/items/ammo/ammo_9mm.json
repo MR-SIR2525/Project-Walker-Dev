@@ -1,0 +1,1 @@
+{"format_version":"1.21.0","minecraft:item":{"description":{"identifier":"pw:ammo_9mm","menu_category":{"category":"equipment","group":"itemGroup.name.ammo"}},"components":{"minecraft:display_name":{"value":"item.ammo_9mm.name"},"minecraft:tags":{"tags":["pw:is_ammo"]},"minecraft:icon":"ammo_9mm","minecraft:max_stack_size":32}}}

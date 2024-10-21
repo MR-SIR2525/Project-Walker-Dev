@@ -1,0 +1,1 @@
+{"format_version":"1.20.10","minecraft:recipe_shaped":{"description":{"identifier":"pw:hammer"},"tags":["crafting_table"],"pattern":["BBB"," A "],"key":{"A":{"item":"minecraft:stick"},"B":{"item":"pw:steel_ingot"}},"unlock":[{"item":"pw:steel_ingot"}],"result":{"item":"pw:hammer"}}}

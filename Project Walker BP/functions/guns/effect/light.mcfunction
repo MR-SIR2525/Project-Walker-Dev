@@ -1,0 +1,1 @@
+fill ~~1~ ~~1~1 pw:muzzle_light_0 replace air

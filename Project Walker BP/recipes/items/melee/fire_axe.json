@@ -1,0 +1,1 @@
+{"format_version":"1.20.10","minecraft:recipe_shaped":{"description":{"identifier":"pw:fire_axe"},"tags":["crafting_table"],"pattern":["BBD","BA "," C "],"key":{"A":{"item":"minecraft:stick"},"B":{"item":"pw:steel_ingot"},"C":{"item":"pw:duct_tape"}},"unlock":[{"item":"pw:steel_ingot"}],"result":{"item":"pw:fire_axe"}}}

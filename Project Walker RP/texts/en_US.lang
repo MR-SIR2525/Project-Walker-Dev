@@ -1,0 +1,278 @@
+## Entities
+entity.pw:crow.name=Crow
+entity.pw:deer.name=Deer
+entity.pw:walker.name=Walker
+entity.pw:loot_civil.name=§dCivil Loot§r
+entity.pw:loot_medical.name=§dMedical Loot§r
+entity.pw:loot_military.name=§dMilitary Loot§r
+entity.pw:bandit.name=Bandit
+entity.pw:npc.name=NPC
+entity.pw:survivor.name=Survivor
+entity.pw:trader.name=Trader
+entity.pw:bullet.name=Bullet
+entity.pw:thrown_flash_grenade.name=Flash Grenade
+entity.pw:thrown_frag_grenade.name=Fragment Grenade
+entity.pw:thrown_smoke_grenade.name=Smoke Grenade
+entity.pw:m809.name=M809 Truck
+entity.pw:sedan.name=Sedan
+
+## Items
+item.spawn_egg.entity.pw:crow.name=Spawn Crow
+item.spawn_egg.entity.pw:deer.name=Spawn Deer
+item.spawn_egg.entity.pw:walker.name=Spawn Walker
+item.spawn_egg.entity.pw:loot_civil.name=Spawn Civil Loot
+item.spawn_egg.entity.pw:loot_medical.name=Spawn Medical Loot
+item.spawn_egg.entity.pw:loot_military.name=Spawn Military Loot
+item.spawn_egg.entity.pw:bandit.name=Spawn Bandit
+item.spawn_egg.entity.pw:npc.name=Spawn NPC
+item.spawn_egg.entity.pw:survivor.name=Spawn Survivor
+item.spawn_egg.entity.pw:trader.name=Spawn Trader
+item.spawn_egg.entity.pw:m809.name=Spawn M809 Truck
+item.spawn_egg.entity.pw:sedan.name=Spawn Sedan
+
+item.ammo_9mm.name=9mm Cartridge Box
+item.ammo_12gauge.name=12 Gauge Cartridge Box
+item.ammo_45acp.name=.45 ACP Cartridge Box
+item.ammo_50ae.name=.50 AE Cartridge Box
+item.ammo_57mm.name=5.7mm Cartridge Box
+item.ammo_545mm.name=5.45mm Cartridge Box
+item.ammo_556mm.name=5.56mm Cartridge Box
+item.ammo_762mm.name=7.62mm Cartridge Box
+item.ammo_792mm.name=7.92mm Cartridge Box
+item.ammo_860mm.name=.338 Lapua Magnum Cartridge Box
+item.rocket_rpg7.name=RPG-7 93mm Rocket
+
+item.scope.name=Sniper Scope
+
+item.cargo_black.name=Cargo Black
+item.cargo_brown.name=Cargo Brown
+item.cargo_olive.name=Cargo Olive
+item.cargo_tan.name=Cargo Tan
+item.cargo_white.name=Cargo White
+
+item.hoodie_black.name=Hoodie Black
+item.hoodie_blue.name=Hoodie Blue
+item.hoodie_brown.name=Hoodie Brown
+item.hoodie_green.name=Hoodie Green
+item.hoodie_olive.name=Hoodie Olive
+item.hoodie_red.name=Hoodie Red
+item.hoodie_tan.name=Hoodie Tan
+item.hoodie_white.name=Hoodie White
+
+item.shirt_black.name=Shirt Black
+item.shirt_blue.name=Shirt Blue
+item.shirt_brown.name=Shirt Brown
+item.shirt_green.name=Shirt Green
+item.shirt_olive.name=Shirt Olive
+item.shirt_red.name=Shirt Red
+item.shirt_tan.name=Shirt Tan
+item.shirt_white.name=Shirt White
+
+item.cola.name=Cola Soda
+item.energy_drink.name=Energy Drink
+item.kvas.name=Kvas
+item.pepsi.name=Pepsi Soda
+item.sprite.name=Sprite Soda
+item.water_bottle.name=Water Bottle
+item.water_bottle_empty.name=Empty Water Bottle
+item.water_canteen.name=Water Canteen
+item.water_canteen_empty.name=Empty Water Canteen
+
+item.banana.name=Banana
+item.canned_bacon_open.name=Open Canned Bacon
+item.canned_baked_beans_open.name=Open Canned Baked Beans
+item.canned_peaches_open.name=Open Canned Peaches
+item.canned_sardines_open.name=Open Canned Sardines
+item.canned_spaghetti_open.name=Open Canned Spaghetti
+item.canned_tuna_open.name=Open Canned Tuna
+item.canned_bacon.name=Closed Canned Bacon
+item.canned_baked_beans.name=Closed Canned Baked Beans
+item.canned_peaches.name=Close Canned Peaches
+item.canned_sardines.name=Close Canned Sardines
+item.canned_spaghetti.name=Closed Canned Spaghetti
+item.canned_tuna.name=Closed Canned Tuna
+item.cereal.name=Cereal Pack
+item.cooked_flesh.name=Cooked Flesh
+item.cooked_venison.name=Cooked Venison
+item.mandarine.name=Mandarine
+item.mre.name=MRE
+item.orange.name=Orange
+item.pear.name=Pear
+item.raw_venison.name=Raw Venison
+item.rice.name=Rice Pack
+item.sausage.name=Sausage
+item.tomato.name=Tomato
+
+item.ak12.name=AK-12
+item.ak47.name=AK-47
+item.ak74.name=AK-74
+item.akm.name=AKM
+item.aug.name=Steyr AUG
+item.famas.name=FAMAS-F1
+item.fnfal.name=FN Fal
+item.m4.name=M4
+item.m16.name=M16
+item.sks.name=SKS
+item.stg44.name=StG 44
+item.rpg7.name=RPG-7
+item.m60.name=M60
+item.rpk.name=RPK-47
+item.colt_m1892.name=Colt M1892
+item.colt_python.name=Colt Python
+item.deagle.name=.50 Desert Eagle
+item.fs.name=FN Five-seven
+item.glock17.name=Glock 17
+item.p350.name=SIG Sauer P320
+item.tec9.name=TEC-9
+item.usp.name=HK USP
+item.m1014.name=M1014
+item.sawedoff.name=Sawed-off Shotgun
+item.spas12.name=SPAS-12
+item.mac10.name=MAC-10
+item.mp5.name=HK MP5
+item.mp7.name=HK MP7
+item.mp40.name=MP 40
+item.p90.name=FN P90
+item.ppsh.name=PPSh-41
+item.thompson.name=Thompson M1A1
+item.ump45.name=HK UMP-45
+item.awm.name=AWM
+item.kar98k.name=Kar98k
+item.m40.name=M40
+item.m110.name=M110 SASS
+
+item.aluminum_ingot.name=Aluminum Ingot
+item.aluminum_nugget.name=Aluminum Nugget
+item.bucket_petroleum.name=Bucket of Petroleum
+item.bullet_gunpowder.name=Bullet Gunpowder
+item.bullet_ingredients.name=Bullet Ingredients
+item.copper_nugget.name=Copper Nugget
+item.plastic_mass.name=Plastic Mass
+item.plastic_plate.name=Plastic Plate
+item.steel_ingot.name=Steel Ingot
+item.steel_nugget.name=Steel Nugget
+item.sulfur_powder.name=Sulfur Powder
+
+item.aidkit.name=First Aid Kit
+item.bandage.name=Bandage
+item.rag.name=Rag
+item.splint.name=Makeshift Splint
+item.syringe_cure.name=Infection Cure Syringe
+item.syringe_morphine.name=Morphine Syringe
+
+item.baseball_bat.name=Baseball Bat
+item.baseball_bat_nailed.name=Nailed Baseball Bat
+item.baton.name=Police Baton
+item.board.name=Board
+item.board_nailed.name=Nailed Board
+item.cleaver.name=Cleaver
+item.crowbar.name=Crowbar
+item.diamond_bat.name=Diamond Bat
+item.engineer_shovel.name=Engineer Shovel
+item.fire_axe.name=Fireman's Axe
+item.golf_club.name=Golf Club
+item.hammer.name=Hammer
+item.hatchet.name=Hatchet
+item.hockey_stick.name=Hockey Stick
+item.katana.name=Katana
+item.kitchen_knife.name=Kitchen Knife
+item.lead_pipe.name=Lead Pipe
+item.machete.name=Machete
+item.military_knife.name=Military Knife
+item.netherite_bat.name=Netherite Bat
+item.opener.name=Can Opener
+item.pan.name=Pan
+item.saw.name=Saw
+item.screwdriver.name=Screwdriver
+item.skalka.name=Skalka
+item.sledge_hammer.name=Sledgehammer
+item.splitting_axe.name=Splitting Axe
+item.steel_bat.name=Steel Bat
+item.tactical_axe.name=Tactical Ace
+item.tire_iron.name=Tire Iron
+item.wrench.name=Wrench
+
+item.car_key.name=Car Key
+item.deer_hide.name=Deer Hide
+item.dirty_rag.name=Dirty Rag
+item.duct_tape.name=Duct Tape
+item.empty_can.name=Empty Can
+item.empty_syringe.name=Empty Syringe
+item.fuel.name=Fuel Can (Unusable)
+item.guitar.name=Guitar
+item.nails_bag.name=Nails Bag
+
+item.flash_grenade.name=Flash Grenade
+item.frag_grenade.name=Fragment Grenade
+item.smoke_grenade.name=Smoke Grenade
+
+item.gasmask.name=Gasmask
+item.helmet_spetsnaz.name=Spetsnaz Helmet
+item.helmet_motorcycle.name=Motorcycle Helmet
+item.helmet_military.name=Military Helmet
+item.helmet_bicycle.name=Bicycle Helmet
+item.nv_goggles.name=Night Vision Goggles
+item.santa_hat.name=Santa Hat
+item.vest_assault.name=Vest Assault
+item.vest_field.name=Vest Field
+item.vest_plate.name=Vest Plate
+item.vest_press.name=Vest Press
+
+## Blocks
+tile.small_stones.name=Small Stone
+tile.small_cobblestones.name=Small Cobblestone
+
+tile.aluminum_block.name=Aluminum Block
+tile.aluminum_ore.name=Aluminum Ore
+tile.steel_block.name=Steel Block
+tile.steel_ore.name=Steel Ore
+
+tile.armament_table.name=Armament Table
+tile.barbed_wire.name=Barbed Wire
+tile.celling_lamp.name=Celling Lamp
+tile.camp_lantern.name=Camping Lantern
+tile.chair.name=Chair
+tile.closet.name=Closet
+tile.computer.name=Computer
+tile.crate.name=Wooden Crate
+tile.ham_radio.name=Ham Radio
+tile.hazard_block.name=Hazard
+tile.hesco_olive.name=Olive Hesco
+tile.hesco_snow.name=Snow Hesco
+tile.hesco_tan.name=Tan Hesco
+tile.metal_rack.name=Metal Rack
+tile.radio.name=Radio
+tile.table.name=Table
+tile.table_carpet.name=Table with Carpet
+tile.water_pump.name=Water Pump
+tile.wooden_barricade.name=Wooden Barricade
+
+## Game
+game.message.watermark=Project Walker [v1.8.12]
+game.message.welcome_1=§lProject §4Walker §fV1.8.12
+game.message.welcome_2=Owner/Main-Developer: §b@GabrielAplok
+game.message.welcome_3=Founder/Developer: §6@GabrielMODGuy
+game.message.welcome_4=Website: §ahttps://gabriel-aplok.com/projects/project-walker
+game.message.welcome_5=§o§cSurvive a Zombie Apocalypse in Minecraft Bedrock!
+game.message.welcome_6=§aWarning: This add-on was only developed for Minecraft 1.21.0, if u're on another mc version and have an bug, please use the correct mc version.
+
+game.message.broken_leg=§cDamn, I broke my leg.
+game.message.infected=§cDamn, I got infected.
+game.message.bleeding=§cDamn, I'am bleeding a lot.
+game.message.toxic=§cDamn, I was poisoned.
+
+## Effects
+potion.hunger=Infected
+potion.moveSlowdown=Fractured
+potion.wither=Intoxicated
+potion.poison=Bleeding
+
+## UI
+action.hint.exit.pw:m809=Tap jump to exit the M809 Truck
+action.hint.exit.console.pw:m809=Press :_input_key.jump: to exit the M809 Truck
+action.hint.exit.pw:sedan=Tap jump to exit the Sedan
+action.hint.exit.console.pw:sedan=Press :_input_key.jump: to exit the Sedan
+
+## Death
+death.attack.bullet=%1$s was shot by %2$s
+death.attack.bullet.item=%1$s was shot by %2$s using %3$s

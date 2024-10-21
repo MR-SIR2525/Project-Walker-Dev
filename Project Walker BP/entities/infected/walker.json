@@ -1,0 +1,921 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "pw:walker",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false,
+      "properties": {
+        "pw:skin": {
+          "client_sync": true,
+          "type": "int",
+          "default": "math.random_integer(0, 17)",
+          "range": [
+            0,
+            17
+          ]
+        },
+        "pw:eyes": {
+          "client_sync": true,
+          "type": "int",
+          "default": "math.random_integer(0, 5)",
+          "range": [
+            0,
+            5
+          ]
+        },
+        "pw:pose": {
+          "client_sync": true,
+          "type": "int",
+          "default": "math.random_integer(0, 8)",
+          "range": [
+            0,
+            8
+          ]
+        }
+      }
+    },
+    
+    "component_groups": {
+      "b569b47b3b21442e96dd7af2fa3bbcbc": {
+        "minecraft:navigation.walk": {
+          "is_amphibious": true,
+          "can_pass_doors": true,
+          "can_walk": true,
+          "can_break_doors": true
+        }
+      },
+      "baby": {
+        "minecraft:experience_reward": {
+          "on_death": "q.last_hit_by_player?12+(q.equipment_count*math.random(1,4)):0"
+        },
+        "minecraft:is_baby": {},
+        "minecraft:scale": {
+          "value": 0.5
+        }
+      },
+      "adult": {
+        "minecraft:experience_reward": {
+          "on_death": "q.last_hit_by_player?6+(q.equipment_count*math.random(1,4)):0"
+        }
+      },
+      "can_have_gear": {
+        "minecraft:equipment": {
+          "table": "loot_tables/entities/infected/walker_gear.json"
+        }
+      },
+      "can_break_doors": {
+        "minecraft:annotation.break_door": {}
+      },
+      "calm": {
+        "minecraft:mark_variant": {
+          "value": 0
+        },
+        "minecraft:follow_range": {
+          "value": 32
+        }
+      },
+      "angry": {
+        "minecraft:mark_variant": {
+          "value": 1
+        },
+        "minecraft:follow_range": {
+          "value": 64
+        },
+        "minecraft:timer": {
+          "looping": true,
+          "time": 32,
+          "time_down_event": {
+            "event": "pw:remove_angry"
+          }
+        }
+      },
+      "attack_0": {
+        "minecraft:attack": {
+          "damage": 2
+        }
+      },
+      "attack_1": {
+        "minecraft:attack": {
+          "damage": 4
+        }
+      },
+      "attack_2": {
+        "minecraft:attack": {
+          "damage": 6
+        }
+      },
+      "attack_3": {
+        "minecraft:attack": {
+          "damage": 8
+        }
+      },
+      "movement_0": {
+        "minecraft:movement": {
+          "value": 0.2
+        }
+      },
+      "movement_1": {
+        "minecraft:movement": {
+          "value": 0.25
+        }
+      },
+      "movement_2": {
+        "minecraft:movement": {
+          "value": 0.3
+        }
+      },
+      "movement_3": {
+        "minecraft:movement": {
+          "value": 0.35
+        }
+      },
+      "health_0": {
+        "minecraft:health": {
+          "value": 10,
+          "max": 10
+        }
+      },
+      "health_1": {
+        "minecraft:health": {
+          "value": 15,
+          "max": 15
+        }
+      },
+      "health_2": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        }
+      },
+      "health_3": {
+        "minecraft:health": {
+          "value": 25,
+          "max": 25
+        }
+      },
+      "health_4": {
+        "minecraft:health": {
+          "value": 30,
+          "max": 30
+        }
+      },
+      "health_5": {
+        "minecraft:health": {
+          "value": 35,
+          "max": 35
+        }
+      },
+      "runner": {
+        "minecraft:type_family": {
+          "family": [
+            "walker",
+            "infected",
+            "runner",
+            "zombie",
+            "undead",
+            "monster",
+            "mob"
+          ]
+        },
+        "minecraft:is_tamed": {},
+        "minecraft:movement": {
+          "value": 0.42
+        },
+        "minecraft:attack": {
+          "damage": 2
+        }
+      },
+      "crawler": {
+        "minecraft:type_family": {
+          "family": [
+            "walker",
+            "infected",
+            "crawler",
+            "zombie",
+            "undead",
+            "monster",
+            "mob"
+          ]
+        },
+        "minecraft:is_saddled": {},
+        "minecraft:collision_box": {
+          "width": 0.5,
+          "height": 0.6
+        },
+        "minecraft:movement": {
+          "value": 0.12
+        },
+        "minecraft:attack": {
+          "damage": 1
+        }
+      },
+      "beast": {
+        "minecraft:type_family": {
+          "family": [
+            "walker",
+            "infected",
+            "beast",
+            "zombie",
+            "undead",
+            "monster",
+            "mob"
+          ]
+        },
+        "minecraft:is_sheared": {},
+        "minecraft:collision_box": {
+          "width": 0.5,
+          "height": 1
+        },
+        "minecraft:movement": {
+          "value": 0.32
+        },
+        "minecraft:attack": {
+          "damage": 1
+        },
+        "minecraft:navigation.climb": {
+          "is_amphibious": true,
+          "can_pass_doors": true,
+          "can_walk": true,
+          "can_break_doors": true,
+          "avoid_water": true,
+          "avoid_damage_blocks": true
+        }
+      },
+      "despawn": {
+        "minecraft:instant_despawn": {}
+      }
+    },
+
+    "components": {
+      "minecraft:is_hidden_when_invisible": {},
+      "minecraft:nameable": {},
+      "minecraft:type_family": {
+        "family": [
+          "walker",
+          "infected",
+          "zombie",
+          "undead",
+          "monster",
+          "mob"
+        ]
+      },
+      "minecraft:collision_box": {
+        "width": 0.6,
+        "height": 1.9
+      },
+      "minecraft:movement.basic": {},
+      "minecraft:jump.static": {},
+      "minecraft:can_climb": {},
+      "minecraft:block_climber": {},
+      "minecraft:breathable": {
+        "total_supply": 15,
+        "suffocate_time": 0
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": {
+              "test": "in_lava",
+              "value": true
+            },
+            "cause": "lava",
+            "damage_per_tick": 4
+          }
+        ]
+      },
+      "minecraft:entity_sensor": {
+        "subsensors": [
+          {
+            "minimum_count": 1,
+            "range": [
+              64,
+              16
+            ],
+            "event_filters": {
+              "test": "is_family",
+              "subject": "other",
+              "value": "noise"
+            },
+            "event": "pw:add_angry"
+          }
+        ]
+      },
+      "minecraft:angry": {
+        "duration": 30,
+        "broadcast_anger": true,
+        "broadcast_anger_on_attack": true,
+        "broadcast_anger_on_being_attacked": true,
+        "broadcast_range": 20,
+        "broadcast_targets": [
+          "infected"
+        ],
+        "calm_event": {
+          "event": "pw:remove_angry"
+        }
+      },
+      "minecraft:group_size": {
+        "radius": 32,
+        "filters": {
+          "all_of": [
+            {
+              "test": "has_component",
+              "operator": "!=",
+              "value": "minecraft:is_baby"
+            },
+            {
+              "test": "is_family",
+              "value": "infected"
+            }
+          ]
+        }
+      },
+      "minecraft:ambient_sound_interval": {
+        "value": 2,
+        "range": 2,
+        "event_name": "ambient",
+        "event_names": [
+          {
+            "event_name": "angry",
+            "condition": "q.mark_variant==1&&!q.has_target"
+          },
+          {
+            "event_name": "agitated",
+            "condition": "q.mark_variant==1&&q.has_target"
+          }
+        ]
+      },
+      "minecraft:knockback_resistance": {
+        "value": 0.15
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/entities/infected/walker.json"
+      },
+      "minecraft:despawn": {
+        "despawn_from_distance": {}
+      },
+      "minecraft:environment_sensor": {
+        "triggers": [
+          {
+            "filters": {
+              "test": "is_difficulty",
+              "value": "peaceful"
+            },
+            "event": "pw:despawn"
+          }
+        ]
+      },
+      "minecraft:behavior.melee_box_attack": {
+        "priority": 3,
+        "can_spread_on_fire": true
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 7,
+        "speed_multiplier": 1
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 8,
+        "look_distance": 6,
+        "probability": 0.02
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 9
+      },
+      "minecraft:behavior.hurt_by_target": {
+        "priority": 1
+      },
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 2,
+        "must_see": true,
+        "reselect_targets": true,
+        "within_radius": 25,
+        "must_see_forget_duration": 17,
+        "entity_types": [
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "player"
+                },
+                {
+                  "test": "is_sneaking",
+                  "subject": "other",
+                  "value": false
+                }
+              ]
+            },
+            "max_dist": 32
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "player"
+                },
+                {
+                  "test": "is_sneaking",
+                  "subject": "other",
+                  "value": true
+                }
+              ]
+            },
+            "max_dist": 16
+          },
+          {
+            "filters": {
+              "any_of": [
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "villager"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "pillager"
+                }
+              ]
+            },
+            "max_dist": 32
+          }
+        ]
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "cause": "all",
+            "on_damage": {
+              "event": "pw:on_damage"
+            }
+          }
+        ]
+      },
+      "minecraft:behavior.avoid_block": {
+        "priority": 9,
+        "tick_interval": 5,
+        "search_range": 8,
+        "search_height": 4,
+        "sprint_speed_modifier": 1.2,
+        "target_selection_method": "nearest",
+        "target_blocks": [
+          "minecraft:fire",
+          "minecraft:lantern",
+          "minecraft:torch",
+          "minecraft:campfire"
+        ],
+        "avoid_block_sound": "retreat",
+        "sound_interval": {
+          "range_min": 2,
+          "range_max": 6
+        }
+      },
+      "minecraft:behavior.investigate_suspicious_location": {
+        "priority": 5,
+        "speed_multiplier": 0.6
+      },
+      "minecraft:behavior.float": {
+        "priority": 0
+      },
+      "minecraft:suspect_tracking": {},
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:physics": {},
+      "minecraft:conditional_bandwidth_optimization": {}
+    },
+    
+    "events": {
+      "minecraft:entity_spawned": {
+        "sequence": [
+          {
+            "randomize": [
+              {
+                "weight": 98,
+                "add": {
+                  "component_groups": [
+                    "adult"
+                  ]
+                }
+              },
+              {
+                "weight": 2,
+                "add": {
+                  "component_groups": [
+                    "baby"
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "randomize": [
+              {
+                "weight": 10
+              },
+              {
+                "weight": 90,
+                "add": {
+                  "component_groups": [
+                    "can_have_gear"
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "randomize": [
+              {
+                "weight": 90
+              },
+              {
+                "weight": 10,
+                "add": {
+                  "component_groups": [
+                    "can_break_doors"
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "trigger": "pw:attack"
+          },
+          {
+            "trigger": "pw:health"
+          },
+          {
+            "add": {
+              "component_groups": [
+                "b569b47b3b21442e96dd7af2fa3bbcbc"
+              ]
+            }
+          },
+          {
+            "randomize": [
+              {
+                "weight": 85,
+                "trigger": "pw:movement"
+              },
+              {
+                "weight": 5,
+                "trigger": "pw:add_runner"
+              },
+              {
+                "weight": 5,
+                "trigger": "pw:add_crawler"
+              },
+              {
+                "weight": 5,
+                "trigger": "pw:add_beast"
+              }
+            ]
+          },
+          {
+            "randomize": [
+              {
+                "queue_command": {
+                  "command": [
+                    "replaceitem entity @s slot.armor.head 0 pw:helmet_bicycle"
+                  ]
+                }
+              },
+              {
+                "queue_command": {
+                  "command": [
+                    "replaceitem entity @s slot.armor.head 0 pw:helmet_military"
+                  ]
+                }
+              },
+              {
+                "queue_command": {
+                  "command": [
+                    "replaceitem entity @s slot.armor.head 0 pw:helmet_motorcycle"
+                  ]
+                }
+              },
+              {
+                "queue_command": {
+                  "command": [
+                    "replaceitem entity @s slot.armor.head 0 pw:helmet_spetsnaz"
+                  ]
+                }
+              },
+              {
+                "queue_command": {
+                  "command": [
+                    "replaceitem entity @s slot.armor.head 0 pw:santa_hat"
+                  ]
+                }
+              },
+              {
+                "queue_command": {
+                  "command": [
+                    "replaceitem entity @s slot.armor.head 0 pw:nv_goggles"
+                  ]
+                }
+              },
+              {
+                "weight": 90
+              }
+            ]
+          },
+          {
+            "randomize": [
+              {
+                "queue_command": {
+                  "command": [
+                    "replaceitem entity @s slot.armor.head 0 pw:vest_assault"
+                  ]
+                }
+              },
+              {
+                "queue_command": {
+                  "command": [
+                    "replaceitem entity @s slot.armor.head 0 pw:vest_field"
+                  ]
+                }
+              },
+              {
+                "queue_command": {
+                  "command": [
+                    "replaceitem entity @s slot.armor.head 0 pw:vest_plate"
+                  ]
+                }
+              },
+              {
+                "queue_command": {
+                  "command": [
+                    "replaceitem entity @s slot.armor.head 0 pw:vest_press"
+                  ]
+                }
+              },
+              {
+                "weight": 90
+              }
+            ]
+          }
+        ]
+      },
+      "pw:attack": {
+        "randomize": [
+          {
+            "add": {
+              "component_groups": [
+                "attack_0"
+              ]
+            }
+          },
+          {
+            "add": {
+              "component_groups": [
+                "attack_1"
+              ]
+            }
+          },
+          {
+            "add": {
+              "component_groups": [
+                "attack_2"
+              ]
+            }
+          },
+          {
+            "add": {
+              "component_groups": [
+                "attack_3"
+              ]
+            }
+          }
+        ]
+      },
+      "pw:movement": {
+        "randomize": [
+          {
+            "add": {
+              "component_groups": [
+                "movement_0"
+              ]
+            }
+          },
+          {
+            "add": {
+              "component_groups": [
+                "movement_1"
+              ]
+            }
+          },
+          {
+            "add": {
+              "component_groups": [
+                "movement_2"
+              ]
+            }
+          },
+          {
+            "add": {
+              "component_groups": [
+                "movement_3"
+              ]
+            }
+          }
+        ]
+      },
+      "pw:health": {
+        "randomize": [
+          {
+            "add": {
+              "component_groups": [
+                "health_0"
+              ]
+            }
+          },
+          {
+            "add": {
+              "component_groups": [
+                "health_1"
+              ]
+            }
+          },
+          {
+            "add": {
+              "component_groups": [
+                "health_2"
+              ]
+            }
+          },
+          {
+            "add": {
+              "component_groups": [
+                "health_3"
+              ]
+            }
+          },
+          {
+            "add": {
+              "component_groups": [
+                "health_4"
+              ]
+            }
+          },
+          {
+            "add": {
+              "component_groups": [
+                "health_5"
+              ]
+            }
+          }
+        ]
+      },
+      "pw:despawn": {
+        "add": {
+          "component_groups": [
+            "despawn"
+          ]
+        }
+      },
+      "pw:add_angry": {
+        "add": {
+          "component_groups": [
+            "angry"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "calm"
+          ]
+        }
+      },
+      "pw:remove_angry": {
+        "add": {
+          "component_groups": [
+            "calm"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "angry"
+          ]
+        }
+      },
+      "pw:add_adult": {
+        "remove": {
+          "component_groups": [
+            "baby"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "adult"
+          ]
+        }
+      },
+      "pw:add_baby": {
+        "remove": {
+          "component_groups": [
+            "adult"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "baby"
+          ]
+        }
+      },
+      "pw:add_runner": {
+        "remove": {
+          "component_groups": [
+            "movement_0",
+            "movement_1",
+            "movement_2",
+            "movement_3",
+            "crawler",
+            "beast"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "runner"
+          ]
+        }
+      },
+      "pw:add_crawler": {
+        "remove": {
+          "component_groups": [
+            "movement_0",
+            "movement_1",
+            "movement_2",
+            "movement_3",
+            "runner",
+            "beast"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "crawler"
+          ]
+        }
+      },
+      "pw:add_beast": {
+        "remove": {
+          "component_groups": [
+            "b569b47b3b21442e96dd7af2fa3bbcbc",
+            "movement_0",
+            "movement_1",
+            "movement_2",
+            "movement_3",
+            "runner",
+            "crawler",
+            "baby"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "beast",
+            "adult"
+          ]
+        }
+      },
+      "pw:on_damage": {
+        "sequence": [
+          {
+            "filters": {
+              "test": "has_damage",
+              "operator": "!=",
+              "value": "projectile"
+            },
+            "sequence": [
+              {
+                "queue_command": {
+                  "command": [
+                    "particle pw:blood_0 ~~0.4~"
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "filters": {
+              "test": "has_damage",
+              "value": "projectile"
+            },
+            "sequence": [
+              {
+                "queue_command": {
+                  "command": [
+                    "particle pw:blood_1 ~~0.4~"
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,1 @@
+execute as @s[hasitem={item=pw:gasmask, location=slot.armor.head}] run function player/wearable/gasmask

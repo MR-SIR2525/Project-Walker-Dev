@@ -1,0 +1,1 @@
+{"format_version":"1.21.0","minecraft:item":{"description":{"identifier":"pw:deer_hide","menu_category":{"category":"items","group":"itemGroup.name.other"}},"components":{"minecraft:display_name":{"value":"item.deer_hide.name"},"minecraft:icon":"deer_hide"}}}

@@ -1,0 +1,1 @@
+{"format_version":"1.20.10","minecraft:recipe_shaped":{"description":{"identifier":"pw:katana"},"tags":["crafting_table"],"pattern":["B  "," B "," AC"],"key":{"A":{"item":"minecraft:stick"},"B":{"item":"pw:aluminum_ingot"},"C":{"item":"minecraft:gold_ingot"}},"unlock":[{"item":"pw:aluminum_ingot"}],"result":{"item":"pw:katana"}}}

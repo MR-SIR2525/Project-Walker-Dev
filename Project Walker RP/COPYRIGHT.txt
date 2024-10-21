@@ -1,0 +1,24 @@
+The add-on Project Walker is Copyright © 2020-2024 by Gabriel Aplok and the author's intellectual property.
+May not be reproduced under any circumstances, except for personal and private use, for a time when
+as it remains in its unchanged and not edited form.
+Otherwise it publicly distributed without prior written permission. Use of this add-on to any
+another site or as part of any public display is strictly prohibited and a violation of
+Copyright.
+
+Please have a common sense, if you want to use any asset, ask me for permission before.
+find me on my social media network.
+
+For more information on this, visit the site at: https://gabriel-aplok.com/
+
+____________ _____   ___ _____ _____ _____   _    _  ___   _      _   __ ___________ 
+| ___ \ ___ \  _  | |_  |  ___/  __ \_   _| | |  | |/ _ \ | |    | | / /|  ___| ___ \
+| |_/ / |_/ / | | |   | | |__ | /  \/ | |   | |  | / /_\ \| |    | |/ / | |__ | |_/ /
+|  __/|    /| | | |   | |  __|| |     | |   | |/\| |  _  || |    |    \ |  __||    / 
+| |   | |\ \\ \_/ /\__/ / |___| \__/\ | |   \  /\  / | | || |____| |\  \| |___| |\ \ 
+\_|   \_| \_|\___/\____/\____/ \____/ \_/    \/  \/\_| |_/\_____/\_| \_/\____/\_| \_|
+
+  ____    _    ____  ____  ___ _____ _          _    ____  _     ___  _  __
+ / ___|  / \  | __ )|  _ \|_ _| ____| |        / \  |  _ \| |   / _ \| |/ /
+| |  _  / _ \ |  _ \| |_) || ||  _| | |       / _ \ | |_) | |  | | | | ' / 
+| |_| |/ ___ \| |_) |  _ < | || |___| |___   / ___ \|  __/| |__| |_| | . \ 
+ \____/_/   \_\____/|_| \_\___|_____|_____| /_/   \_\_|   |_____\___/|_|\_\

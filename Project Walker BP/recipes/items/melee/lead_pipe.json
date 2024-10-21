@@ -1,0 +1,1 @@
+{"format_version":"1.20.10","minecraft:recipe_shaped":{"description":{"identifier":"pw:lead_pipe"},"tags":["crafting_table"],"pattern":["AA"," A"," A"],"key":{"A":{"item":"pw:aluminum_ingot"}},"unlock":[{"item":"pw:aluminum_ingot"}],"result":{"item":"pw:lead_pipe"}}}

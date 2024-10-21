@@ -1,0 +1,1 @@
+{"format_version":"1.21.0","minecraft:item":{"description":{"identifier":"pw:duct_tape","menu_category":{"category":"items","group":"itemGroup.name.other"}},"components":{"minecraft:display_name":{"value":"item.duct_tape.name"},"minecraft:icon":"duct_tape"}}}

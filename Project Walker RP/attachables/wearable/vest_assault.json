@@ -1,0 +1,1 @@
+{"format_version":"1.20.0","minecraft:attachable":{"description":{"identifier":"pw:vest_assault","materials":{"default":"entity_alphatest"},"textures":{"default":"textures/models/wearable/vest_assault"},"geometry":{"default":"geometry.vest_assault"},"scripts":{"parent_setup":"v.chest_layer_visible = 0;"},"render_controllers":["controller.render.default"]}}}

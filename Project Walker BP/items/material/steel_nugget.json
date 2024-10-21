@@ -1,0 +1,1 @@
+{"format_version":"1.21.0","minecraft:item":{"description":{"identifier":"pw:steel_nugget","menu_category":{"category":"items","group":"itemGroup.name.material"}},"components":{"minecraft:display_name":{"value":"item.steel_nugget.name"},"minecraft:icon":"steel_nugget"}}}

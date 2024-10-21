@@ -1,0 +1,1 @@
+{"pools":[{"rolls":1,"entries":[{"type":"item","name":"pw:ak47","functions":[{"function":"looting_enchant","count":{"min":0,"max":1}}]},{"type":"item","name":"pw:akm","functions":[{"function":"looting_enchant","count":{"min":0,"max":1}}]}]}]}

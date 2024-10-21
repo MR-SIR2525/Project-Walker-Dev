@@ -1,0 +1,1 @@
+{"format_version":"1.21.0","minecraft:item":{"description":{"identifier":"pw:car_key","menu_category":{"category":"items","group":"itemGroup.name.other"}},"components":{"minecraft:display_name":{"value":"item.car_key.name"},"minecraft:icon":"car_key","minecraft:max_stack_size":1}}}

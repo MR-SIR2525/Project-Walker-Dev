@@ -1,0 +1,1 @@
+{"format_version":"1.21.0","minecraft:attachable":{"description":{"identifier":"pw:shirt_tan","materials":{"default":"clothing"},"textures":{"default":"textures/models/clothing/shirt_tan"},"geometry":{"default":"geometry.clothing"},"scripts":{"parent_setup":"v.chest_layer_visible = 0;"},"render_controllers":["controller.render.default"]}}}

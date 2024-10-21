@@ -1,0 +1,1 @@
+{"pools":[{"rolls":1,"conditions":[{"condition":"killed_by_player_or_pets"}],"entries":[{"type":"empty"},{"type":"item","name":"pw:ammo_762mm","functions":[{"function":"set_count","count":{"min":0,"max":2}}]}]}]}

@@ -1,0 +1,1 @@
+{"format_version":"1.21.0","minecraft:item":{"description":{"identifier":"pw:aluminum_ingot","menu_category":{"category":"items","group":"itemGroup.name.material"}},"components":{"minecraft:display_name":{"value":"item.aluminum_ingot.name"},"minecraft:icon":"aluminum_ingot"}}}

@@ -1,0 +1,1 @@
+{"format_version":"1.20.10","minecraft:recipe_shaped":{"description":{"identifier":"pw:machete"},"tags":["crafting_table"],"pattern":["BB ","BB ","BAC"],"key":{"A":{"item":"pw:steel_nugget"},"B":{"item":"pw:steel_ingot"},"C":{"item":"minecraft:green_dye"}},"unlock":[{"item":"pw:steel_ingot"}],"result":{"item":"pw:machete"}}}

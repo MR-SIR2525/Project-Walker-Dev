@@ -1,0 +1,1 @@
+{"format_version":"1.21.0","minecraft:item":{"description":{"identifier":"pw:empty_syringe","menu_category":{"category":"items","group":"itemGroup.name.other"}},"components":{"minecraft:display_name":{"value":"item.empty_syringe.name"},"minecraft:icon":"empty_syringe"}}}

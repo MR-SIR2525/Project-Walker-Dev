@@ -1,0 +1,1 @@
+{"format_version":"1.20.10","minecraft:recipe_shaped":{"description":{"identifier":"pw:plastic_plate"},"tags":["crafting_table"],"pattern":["AA","AA"],"key":{"A":{"item":"pw:plastic_mass"}},"unlock":[{"item":"pw:plastic_mass"}],"result":{"item":"pw:plastic_plate"}}}

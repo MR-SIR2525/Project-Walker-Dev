@@ -1,0 +1,66 @@
+{
+    "format_version": 2,
+    "metadata": {
+        "authors": [
+            "Gabriel Aplok",
+            "HSK"
+        ],
+        "url": "https://gabriel-aplok.com/"
+    },
+    "header": {
+        "name": "Project Walker [v1.8.12]",
+        "description": "Produced by §eGabriel Aplok§r and §cHSK§r.\nThe Project Walker is here! Explore a run-down, overgrown world taken over by zombies. To survive, you must scavenge for food and weapons, and fight off the zombies!",
+        "uuid": "d60655ba-ef31-485d-945d-d94541d60cd0",
+        "pack_scope": "world",
+        "min_engine_version": [
+            1,
+            21,
+            20
+        ],
+        "version": [
+            1,
+            8,
+            12
+        ]
+    },
+    "modules": [
+        {
+            "type": "data",
+            "uuid": "da6e3142-940d-4799-9ca8-ff79ec442d16",
+            "version": [
+                1,
+                0,
+                0
+            ]
+        },
+        {
+            "type": "script",
+            "language": "javascript",
+            "uuid": "d91c6423-045c-46e3-b62d-3a87b73a1d40",
+            "entry": "scripts/main.js",
+            "version": [
+                1,
+                8,
+                12
+            ]
+        }
+    ],
+    "dependencies": [
+        {
+            "uuid": "a9c79058-33f4-42bf-847b-3d1772c233b1",
+            "version": [
+                1,
+                8,
+                12
+            ]
+        },
+        {
+            "module_name": "@minecraft/server",
+            "version": "1.13.0"
+        },
+        {
+            "module_name": "@minecraft/server-ui",
+            "version": "1.2.0"
+        }
+    ]
+}

@@ -1,0 +1,1 @@
+{"format_version":"1.20.10","minecraft:recipe_shaped":{"description":{"identifier":"pw:m40_remove_scope"},"tags":["crafting_table"],"pattern":["A"],"key":{"A":{"item":"pw:m40_scoped"}},"unlock":[{"item":"pw:m40_scoped"}],"result":[{"item":"pw:m40"},{"item":"pw:scope"}]}}

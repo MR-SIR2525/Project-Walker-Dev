@@ -1,0 +1,1 @@
+{"format_version":"1.20.10","minecraft:recipe_shaped":{"description":{"identifier":"pw:baseball_bat_nailed"},"tags":["crafting_table"],"pattern":[" B ","BAB"," B "],"key":{"A":{"item":"pw:baseball_bat"},"B":{"item":"pw:nails_bag"}},"unlock":[{"item":"pw:baseball_bat"}],"result":{"item":"pw:baseball_bat_nailed"}}}
