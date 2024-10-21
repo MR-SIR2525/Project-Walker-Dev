@@ -6,11 +6,17 @@
       "population_control": "monster"
     },
     "conditions": [
+      //easy
       {
         "minecraft:spawns_on_surface": {},
         "minecraft:difficulty_filter": {
           "min": "easy",
           "max": "easy"
+        },
+        "minecraft:brightness_filter": {
+          "min": 0,
+          "max": 7,
+          "adjust_for_weather": true
         },
         "minecraft:weight": {
           "default": 2
@@ -25,11 +31,18 @@
           "value": "overworld"
         }
       },
+
+      //normal
       {
         "minecraft:spawns_on_surface": {},
         "minecraft:difficulty_filter": {
           "min": "normal",
           "max": "normal"
+        },
+        "minecraft:brightness_filter": {
+          "min": 0,
+          "max": 7,
+          "adjust_for_weather": true
         },
         "minecraft:weight": {
           "default": 5
@@ -44,12 +57,19 @@
           "value": "overworld"
         }
       },
+
+      //hard
       {
         "minecraft:spawns_on_surface": {},
         "minecraft:spawns_underground": {},
         "minecraft:difficulty_filter": {
           "min": "hard",
           "max": "hard"
+        },
+        "minecraft:brightness_filter": {
+          "min": 0,
+          "max": 7,
+          "adjust_for_weather": true
         },
         "minecraft:weight": {
           "default": 25
