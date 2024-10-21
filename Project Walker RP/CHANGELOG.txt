@@ -1,3 +1,6 @@
+### v1.8.121:
+ - Walkers now only spawn at light levels of 7 or less.
+
 ### v1.8.12:
 - Updated all addon core to 1.21.20
 - Updated behavior codes to new scripts in favor of performance.
