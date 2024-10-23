@@ -8,19 +8,15 @@
         "url": "https://gabriel-aplok.com/"
     },
     "header": {
-        "name": "Project Walker [v1.8.121]",
+        "name": "Project Walker [v1.8.122]",
         "description": "Produced by §eGabriel Aplok§r and §cHSK§r.\nThe Project Walker is here! Explore a run-down, overgrown world taken over by zombies. To survive, you must scavenge for food and weapons, and fight off the zombies! Walkers spawn at light level 7 or less.",
         "uuid": "a9c79058-33f4-42bf-847b-3d1772c233b1",
         "pack_scope": "world",
-        "min_engine_version": [
-            1,
-            21,
-            20
-        ],
+        "min_engine_version": [1, 21, 20],
         "version": [
             1,
             8,
-            121
+            122
         ]
     },
     "modules": [
@@ -40,7 +36,7 @@
             "version": [
                 1,
                 8,
-                121
+                122
             ]
         }
     ]
