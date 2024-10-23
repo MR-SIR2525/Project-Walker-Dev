@@ -1,0 +1,30 @@
+{
+    "format_version": 2,
+    "metadata": {
+        "authors": [
+            "MRxSIR"
+        ]
+    },
+    "header": {
+        "name": "§eWalker Spawn Rules Patch v1 for Project Walker addon by Aplok",
+        "description": "Put above Project Walker addon. Patch that changes walkers to only spawn at light level 7 or less. You need to still have the Project Walker addon installed. Made for v1.8.12 but should work for future versions. By MRxSIR.",
+        "uuid": "8c73a4e7-fb0b-47df-ab0f-ea15309746b4",
+        "min_engine_version": [1, 20, 10],
+        "version": [
+            1,
+            0,
+            0
+        ]
+    },
+    "modules": [
+        {
+            "type": "data",
+            "uuid": "6cb62010-927f-4db0-bdc5-f460a612f4e3",
+            "version": [
+                1,
+                0,
+                0
+            ]
+        }
+    ]
+}
