@@ -7,20 +7,52 @@
       "is_summonable": true,
       "is_experimental": false
     },
-    "components": {
-      "minecraft:conditional_bandwidth_optimization": {},
-      "minecraft:instant_despawn": {}
+
+    "component_groups": {
+      "despawn": {
+        "minecraft:instant_despawn": {
+          "remove_child_entities": false
+        }
+      }
     },
+
+    "components": {
+      // Debugging, just so you can see ones the haven't despawned using ESP
+      "minecraft:collision_box": {
+        "height": 1,
+        "width": 1
+      },
+      
+      "minecraft:physics": {
+        "has_collision": false,
+        "has_gravity": false
+      },
+
+      "minecraft:conditional_bandwidth_optimization": {},
+      
+      // clean up any leftover night horde entities from before this file was changed
+      "minecraft:despawn": {
+        "despawn_from_distance": {}
+      }
+    },
+
     "events": {
       "minecraft:entity_spawned": {
-        "queue_command": {
-          "command": [
-            "summon pw:walker ^^^",
-            "summon pw:walker ^^^",
-            "summon pw:walker ^^^",
-            "summon pw:walker ^^^"
-          ]
-        }
+        "sequence": [
+          {
+            "queue_command": {
+              "command": [
+                "summon pw:walker ^^^",
+                "summon pw:walker ^^^",
+                "summon pw:walker ^^^",
+                "summon pw:walker ^^^"
+              ]
+            }
+          },
+          {
+            "add": {"component_groups": ["despawn"]}
+          }
+        ]
       }
     }
   }
