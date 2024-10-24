@@ -1,4 +1,10 @@
+### v1.8.1211:
+ - MRxSIR.
+ - Fix night horde dummy entity despawn rules.
+ - Villagers walk/run faster to avoid dangerous mobs.
+
 ### v1.8.121:
+ - MRxSIR.
  - Walkers now only spawn at light levels of 7 or less.
 
 ### v1.8.12:
