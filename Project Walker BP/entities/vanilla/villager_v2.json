@@ -2085,36 +2085,16 @@
           {
             "filters": {
               "any_of": [
-                {
-                  "test": "is_family",
-                  "subject": "other",
-                  "value": "zombie"
-                },
-                {
-                  "test": "is_family",
-                  "subject": "other",
-                  "value": "zombie_villager"
-                },
-                {
-                  "test": "is_family",
-                  "subject": "other",
-                  "value": "illager"
-                },
-                {
-                  "test": "is_family",
-                  "subject": "other",
-                  "value": "vex"
-                },
-                {
-                  "test": "is_family",
-                  "subject": "other",
-                  "value": "zoglin"
-                }
+                {"test": "is_family", "subject": "other", "value": "zombie"},
+                {"test": "is_family", "subject": "other", "value": "zombie_villager"},
+                {"test": "is_family", "subject": "other", "value": "illager"},
+                {"test": "is_family", "subject": "other", "value": "vex"},
+                {"test": "is_family", "subject": "other", "value": "zoglin"}
               ]
             },
-            "max_dist": 9,    //was 8
-            "walk_speed_multiplier": 0.8,
-            "sprint_speed_multiplier": 1
+            "max_dist": 12,    //was 8
+            "walk_speed_multiplier": 0.9,
+            "sprint_speed_multiplier": 1.35
             //both were 0.6
           }
         ]
