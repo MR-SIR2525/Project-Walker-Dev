@@ -1,1 +1,1834 @@
-{"format_version":"1.21.0","minecraft:entity":{"description":{"identifier":"minecraft:player","is_spawnable":false,"is_summonable":false,"is_experimental":false,"scripts":{"animate":["guns_tick_controller","guns_auto_controller","guns_semi_controller","guns_bolt_controller","guns_sight_controller","fall_sensor_controller",{"thirst_controller":"q.is_alive"},"nv_goggles_controller",{"hitmark":"q.property('pw:hitmark')"}]},"animations":{"guns_tick_controller":"controller.animation.player.guns_tick","guns_auto_controller":"controller.animation.player.guns_auto","guns_semi_controller":"controller.animation.player.guns_semi","guns_bolt_controller":"controller.animation.player.guns_bolt","guns_sight_controller":"controller.animation.player.guns_sight","fall_sensor_controller":"controller.animation.player.fall_sensor","thirst_controller":"controller.animation.player.thirst","nv_goggles_controller":"controller.animation.player.nv_goggles","hitmark":"animation.player.hitmark"},"properties":{"pw:reloading":{"client_sync":true,"type":"int","default":0,"range":[0,1]},"pw:blocking":{"client_sync":true,"type":"int","default":0,"range":[0,1]},"pw:gun_fire":{"client_sync":true,"type":"int","default":0,"range":[0,1]},"pw:hitmark":{"client_sync":true,"type":"int","default":0,"range":[0,1]}}},"component_groups":{"on_fall_sensor":{"minecraft:damage_sensor":{"triggers":[{"cause":"fall","on_damage":{"event":"pw:add_broken_leg"}},{"cause":"all","on_damage":{"event":"pw:on_damage"}}]}},"off_fall_sensor":{"minecraft:damage_sensor":{"triggers":[{"cause":"all","on_damage":{"event":"pw:on_damage"}}]}},"gun_fire":{"minecraft:spawn_entity":{"entities":[{"filters":{"test":"has_equipment","domain":"hand","value":"pw:ak12"},"min_wait_time":0,"max_wait_time":0,"single_use":true,"spawn_entity":"pw:bullet","spawn_event":"pw:bullet_545mm","num_to_spawn":1},{"filters":{"test":"has_equipment","domain":"hand","value":"pw:ak47"},"min_wait_time":0,"max_wait_time":0,"single_use":true,"spawn_entity":"pw:bullet","spawn_event":"pw:bullet_762mm","num_to_spawn":1},{"filters":{"test":"has_equipment","domain":"hand","value":"pw:ak74"},"min_wait_time":0,"max_wait_time":0,"single_use":true,"spawn_entity":"pw:bullet","spawn_event":"pw:bullet_545mm","num_to_spawn":1},{"filters":{"test":"has_equipment","domain":"hand","value":"pw:akm"},"min_wait_time":0,"max_wait_time":0,"single_use":true,"spawn_entity":"pw:bullet","spawn_event":"pw:bullet_762mm","num_to_spawn":1},{"filters":{"test":"has_equipment","domain":"hand","value":"pw:aug"},"min_wait_time":0,"max_wait_time":0,"single_use":true,"spawn_entity":"pw:bullet","spawn_event":"pw:bullet_556mm","num_to_spawn":1},{"filters":{"test":"has_equipment","domain":"hand","value":"pw:famas"},"min_wait_time":0,"max_wait_time":0,"single_use":true,"spawn_entity":"pw:bullet","spawn_event":"pw:bullet_556mm","num_to_spawn":1},{"filters":{"test":"has_equipment","domain":"hand","value":"pw:fnfal"},"min_wait_time":0,"max_wait_time":0,"single_use":true,"spawn_entity":"pw:bullet","spawn_event":"pw:bullet_762mm","num_to_spawn":1},{"filters":{"test":"has_equipment","domain":"hand","value":"pw:m4"},"min_wait_time":0,"max_wait_time":0,"single_use":true,"spawn_entity":"pw:bullet","spawn_event":"pw:bullet_556mm","num_to_spawn":1},{"filters":{"test":"has_equipment","domain":"hand","value":"pw:m16"},"min_wait_time":0,"max_wait_time":0,"single_use":true,"spawn_entity":"pw:bullet","spawn_event":"pw:bullet_556mm","num_to_spawn":1},{"filters":{"test":"has_equipment","domain":"hand","value":"pw:sks"},"min_wait_time":0,"max_wait_time":0,"single_use":true,"spawn_entity":"pw:bullet","spawn_event":"pw:bullet_762mm","num_to_spawn":1},{"filters":{"test":"has_equipment","domain":"hand","value":"pw:stg44"},"min_wait_time":0,"max_wait_time":0,"single_use":true,"spawn_entity":"pw:bullet","spawn_event":"pw:bullet_792mm","num_to_spawn":1},{"filters":{"test":"has_equipment","domain":"hand","value":"pw:rpg7"},"min_wait_time":0,"max_wait_time":0,"single_use":true,"spawn_entity":"pw:bullet","spawn_event":"pw:rocket_rpg7","num_to_spawn":1},{"filters":{"test":"has_equipment","domain":"hand","value":"pw:m60"},"min_wait_time":0,"max_wait_time":0,"single_use":true,"spawn_entity":"pw:bullet","spawn_event":"pw:bullet_762mm","num_to_spawn":1},{"filters":{"test":"has_equipment","domain":"hand","value":"pw:rpk"},"min_wait_time":0,"max_wait_time":0,"single_use":true,"spawn_entity":"pw:bullet","spawn_event":"pw:bullet_762mm","num_to_spawn":1},{"filters":{"test":"has_equipment","domain":"hand","value":"pw:colt_m1892"},"min_wait_time":0,"max_wait_time":0,"single_use":true,"spawn_entity":"pw:bullet","spawn_event":"pw:bullet_45acp","num_to_spawn":1},{"filters":{"test":"has_equipment","domain":"hand","value":"pw:colt_python"},"min_wait_time":0,"max_wait_time":0,"single_use":true,"spawn_entity":"pw:bullet","spawn_event":"pw:bullet_9mm","num_to_spawn":1},{"filters":{"test":"has_equipment","domain":"hand","value":"pw:deagle"},"min_wait_time":0,"max_wait_time":0,"single_use":true,"spawn_entity":"pw:bullet","spawn_event":"pw:bullet_50ae","num_to_spawn":1},{"filters":{"test":"has_equipment","domain":"hand","value":"pw:fs"},"min_wait_time":0,"max_wait_time":0,"single_use":true,"spawn_entity":"pw:bullet","spawn_event":"pw:bullet_57mm","num_to_spawn":1},{"filters":{"test":"has_equipment","domain":"hand","value":"pw:glock17"},"min_wait_time":0,"max_wait_time":0,"single_use":true,"spawn_entity":"pw:bullet","spawn_event":"pw:bullet_9mm","num_to_spawn":1},{"filters":{"test":"has_equipment","domain":"hand","value":"pw:p350"},"min_wait_time":0,"max_wait_time":0,"single_use":true,"spawn_entity":"pw:bullet","spawn_event":"pw:bullet_9mm","num_to_spawn":1},{"filters":{"test":"has_equipment","domain":"hand","value":"pw:tec9"},"min_wait_time":0,"max_wait_time":0,"single_use":true,"spawn_entity":"pw:bullet","spawn_event":"pw:bullet_9mm","num_to_spawn":1},{"filters":{"test":"has_equipment","domain":"hand","value":"pw:usp"},"min_wait_time":0,"max_wait_time":0,"single_use":true,"spawn_entity":"pw:bullet","spawn_event":"pw:bullet_9mm","num_to_spawn":1},{"filters":{"test":"has_equipment","domain":"hand","value":"pw:m1014"},"min_wait_time":0,"max_wait_time":0,"single_use":true,"spawn_entity":"pw:bullet","spawn_event":"pw:bullet_12gauge","num_to_spawn":12},{"filters":{"test":"has_equipment","domain":"hand","value":"pw:sawedoff"},"min_wait_time":0,"max_wait_time":0,"single_use":true,"spawn_entity":"pw:bullet","spawn_event":"pw:bullet_12gauge","num_to_spawn":6},{"filters":{"test":"has_equipment","domain":"hand","value":"pw:spas12"},"min_wait_time":0,"max_wait_time":0,"single_use":true,"spawn_entity":"pw:bullet","spawn_event":"pw:bullet_12gauge","num_to_spawn":12},{"filters":{"test":"has_equipment","domain":"hand","value":"pw:mac10"},"min_wait_time":0,"max_wait_time":0,"single_use":true,"spawn_entity":"pw:bullet","spawn_event":"pw:bullet_9mm","num_to_spawn":1},{"filters":{"test":"has_equipment","domain":"hand","value":"pw:mp5"},"min_wait_time":0,"max_wait_time":0,"single_use":true,"spawn_entity":"pw:bullet","spawn_event":"pw:bullet_9mm","num_to_spawn":1},{"filters":{"test":"has_equipment","domain":"hand","value":"pw:mp7"},"min_wait_time":0,"max_wait_time":0,"single_use":true,"spawn_entity":"pw:bullet","spawn_event":"pw:bullet_9mm","num_to_spawn":1},{"filters":{"test":"has_equipment","domain":"hand","value":"pw:mp40"},"min_wait_time":0,"max_wait_time":0,"single_use":true,"spawn_entity":"pw:bullet","spawn_event":"pw:bullet_9mm","num_to_spawn":1},{"filters":{"test":"has_equipment","domain":"hand","value":"pw:p90"},"min_wait_time":0,"max_wait_time":0,"single_use":true,"spawn_entity":"pw:bullet","spawn_event":"pw:bullet_57mm","num_to_spawn":1},{"filters":{"test":"has_equipment","domain":"hand","value":"pw:ppsh"},"min_wait_time":0,"max_wait_time":0,"single_use":true,"spawn_entity":"pw:bullet","spawn_event":"pw:bullet_762mm","num_to_spawn":1},{"filters":{"test":"has_equipment","domain":"hand","value":"pw:thompson"},"min_wait_time":0,"max_wait_time":0,"single_use":true,"spawn_entity":"pw:bullet","spawn_event":"pw:bullet_45acp","num_to_spawn":1},{"filters":{"test":"has_equipment","domain":"hand","value":"pw:ump45"},"min_wait_time":0,"max_wait_time":0,"single_use":true,"spawn_entity":"pw:bullet","spawn_event":"pw:bullet_9mm","num_to_spawn":1},{"filters":{"test":"has_equipment","domain":"hand","value":"pw:awm"},"min_wait_time":0,"max_wait_time":0,"single_use":true,"spawn_entity":"pw:bullet","spawn_event":"pw:bullet_860mm","num_to_spawn":1},{"filters":{"test":"has_equipment","domain":"hand","value":"pw:awm_scoped"},"min_wait_time":0,"max_wait_time":0,"single_use":true,"spawn_entity":"pw:bullet","spawn_event":"pw:bullet_860mm","num_to_spawn":1},{"filters":{"test":"has_equipment","domain":"hand","value":"pw:kar98k"},"min_wait_time":0,"max_wait_time":0,"single_use":true,"spawn_entity":"pw:bullet","spawn_event":"pw:bullet_792mm","num_to_spawn":1},{"filters":{"test":"has_equipment","domain":"hand","value":"pw:kar98k_scoped"},"min_wait_time":0,"max_wait_time":0,"single_use":true,"spawn_entity":"pw:bullet","spawn_event":"pw:bullet_792mm","num_to_spawn":1},{"filters":{"test":"has_equipment","domain":"hand","value":"pw:m40"},"min_wait_time":0,"max_wait_time":0,"single_use":true,"spawn_entity":"pw:bullet","spawn_event":"pw:bullet_762mm","num_to_spawn":1},{"filters":{"test":"has_equipment","domain":"hand","value":"pw:m40_scoped"},"min_wait_time":0,"max_wait_time":0,"single_use":true,"spawn_entity":"pw:bullet","spawn_event":"pw:bullet_762mm","num_to_spawn":1},{"filters":{"test":"has_equipment","domain":"hand","value":"pw:m110"},"min_wait_time":0,"max_wait_time":0,"single_use":true,"spawn_entity":"pw:bullet","spawn_event":"pw:bullet_762mm","num_to_spawn":1},{"filters":{"test":"has_equipment","domain":"hand","value":"pw:m110_scoped"},"min_wait_time":0,"max_wait_time":0,"single_use":true,"spawn_entity":"pw:bullet","spawn_event":"pw:bullet_762mm","num_to_spawn":1}]},"minecraft:timer":{"time":0.025,"looping":false,"time_down_event":{"event":"pw:remove_gun_fire"}}}},"components":{"minecraft:experience_reward":{"on_death":"math.min(q.player_level*10,100)"},"minecraft:type_family":{"family":["player"]},"minecraft:is_hidden_when_invisible":{},"minecraft:loot":{"table":"loot_tables/empty.json"},"minecraft:collision_box":{"width":0.6,"height":1.8},"minecraft:can_climb":{},"minecraft:movement":{"value":0.1},"minecraft:hurt_on_condition":{"damage_conditions":[{"filters":{"test":"in_lava","value":true},"cause":"lava","damage_per_tick":4}]},"minecraft:attack":{"damage":2},"minecraft:exhaustion_values":{"heal":6,"jump":0.06,"sprint_jump":0.2,"mine":0.006,"attack":0.2,"damage":0.2,"walk":0.002,"sprint":0.2,"swim":0.02},"minecraft:player.saturation":{"value":5,"max":20},"minecraft:player.exhaustion":{"value":0,"max":20},"minecraft:player.level":{"value":0,"max":24791},"minecraft:player.experience":{"value":0,"max":1},"minecraft:breathable":{"total_supply":15,"suffocate_time":-1,"inhale_time":3.75,"generates_bubbles":false},"minecraft:nameable":{"always_show":true,"allow_name_tag_renaming":false},"minecraft:physics":{"push_towards_closest_space":true},"minecraft:pushable":{"is_pushable":false,"is_pushable_by_piston":true},"minecraft:insomnia":{"days_until_insomnia":3},"minecraft:conditional_bandwidth_optimization":{},"minecraft:block_climber":{},"minecraft:environment_sensor":{"triggers":[{"filters":{"all_of":[{"test":"is_underground","value":true},{"test":"is_underwater","value":false}]},"event":"pw:add_underground"},{"filters":{"all_of":[{"test":"is_underground","value":false}]},"event":"pw:remove_underground"},{"filters":{"all_of":[{"test":"is_sneaking","value":true}]},"event":"pw:add_sneaking"},{"filters":{"all_of":[{"test":"is_sneaking","value":false}]},"event":"pw:remove_sneaking"}]},"minecraft:on_death":{"event":"pw:on_death"},"minecraft:knockback_resistance":{"value":0.4},"minecraft:npc":{"npc_data":{"portrait_offsets":{"translate":[-7,50,0],"scale":[1.75,1.75,1.75]},"picker_offsets":{"translate":[0,20,0],"scale":[1.7,1.7,1.7]}}},"minecraft:interact":{"interactions":[{}]}},"events":{"pw:on_damage":{"sequence":[{"filters":{"test":"has_damage","operator":"!=","value":"projectile"},"sequence":[{"queue_command":{"command":["particle pw:blood_0 ~~0.4~"]}},{"randomize":[{"weight":20,"filters":{"test":"is_family","subject":"other","value":"infected"},"trigger":"pw:add_infection"},{"weight":70}]}]},{"filters":{"test":"has_damage","value":"projectile"},"sequence":[{"queue_command":{"command":["particle pw:blood_1 ~~0.4~"]}},{"randomize":[{"weight":25,"trigger":"pw:add_bleeding"},{"weight":75}]}]},{"filters":{"any_of":[{"test":"has_damage","value":"block_explosion"},{"test":"has_damage","value":"entity_explosion"}]},"sequence":[{"queue_command":{"command":["playsound effect.player.blind @s","particle pw:blood_1 ~0.4~0.4~","particle pw:blood_1 ~-0.4~0.4~","particle pw:blood_1 ~~0.4~0.4","particle pw:blood_1 ~~0.4~-0.4"]}}]}]},"pw:on_death":{"sequence":[{"queue_command":{"command":["playsound mob.human.death @a[rm=0, r=10] ^^^ 100 1 0.01","playsound mob.human.death_distant @a[rm=11, r=200] ^^^ 100 1 0.01","scoreboard players set @s thirst 20","scoreboard players set @s blood 20","scoreboard players add @s deaths 1","execute as @s[tag=infection] run summon pw:walker ^^^"]}},{"trigger":"pw:reset_stats"}]},"pw:reset_stats":{"sequence":[{"trigger":"pw:remove_broken_leg"},{"trigger":"pw:remove_infection"},{"trigger":"pw:remove_bleeding"}]},"pw:add_broken_leg":{"randomize":[{"queue_command":{"command":["tellraw @s[tag=!broken_leg] {\"rawtext\":[{\"translate\":\"game.message.broken_leg\"}]}","playsound effect.player.break_bone @a[r=10] ~~~ 1 1 0.01","effect @s blindness 5 2 true","tag @s[tag=!broken_leg] add broken_leg"]}},{}]},"pw:remove_broken_leg":{"queue_command":{"command":["tag @s[tag=broken_leg] remove broken_leg","effect @s slowness 0 0 true"]}},"pw:add_infection":{"queue_command":{"command":["tellraw @s[tag=!infection] {\"rawtext\":[{\"translate\":\"game.message.infected\"}]}","tag @s[tag=!infection] add infection"]}},"pw:remove_infection":{"queue_command":{"command":["tag @s[tag=infection] remove infection","effect @s hunger 0 0 true"]}},"pw:add_bleeding":{"queue_command":{"command":["tellraw @s {\"rawtext\":[{\"translate\":\"game.message.bleeding\"}]}","effect @s poison 30 4 true"]}},"pw:remove_bleeding":{"queue_command":{"command":["effect @s poison 0 0 true"]}},"pw:add_toxic":{"queue_command":{"command":["tellraw @s {\"rawtext\":[{\"translate\":\"game.message.toxic\"}]}","effect @s wither 30 3 true"]}},"pw:remove_toxic":{"queue_command":{"command":["effect @s wither 0 0 true"]}},"pw:add_fall_sensor":{"remove":{"component_groups":["off_fall_sensor"]},"add":{"component_groups":["on_fall_sensor"]}},"pw:remove_fall_sensor":{"remove":{"component_groups":["on_fall_sensor"]},"add":{"component_groups":["off_fall_sensor"]}},"pw:add_hitmark":{"sequence":[{"queue_command":{"command":["playsound effect.player.hitmarker @s"]}},{"set_property":{"pw:hitmark":1}}]},"pw:remove_hitmark":{"set_property":{"pw:hitmark":0}},"pw:add_reloading":{"set_property":{"pw:reloading":1}},"pw:remove_reloading":{"set_property":{"pw:reloading":0}},"pw:add_blocking":{"set_property":{"pw:blocking":1}},"pw:remove_blocking":{"set_property":{"pw:blocking":0}},"pw:add_underground":{"queue_command":{"command":["tag @s[tag=!underground] add underground"]}},"pw:remove_underground":{"queue_command":{"command":["tag @s[tag=underground] remove underground"]}},"pw:add_sneaking":{"queue_command":{"command":["tag @s[tag=!sneaking] add sneaking"]}},"pw:remove_sneaking":{"queue_command":{"command":["tag @s[tag=sneaking] remove sneaking"]}},"pw:gun_fire":{"sequence":[{"set_property":{"pw:gun_fire":1}},{"add":{"component_groups":["gun_fire"]}}]},"pw:remove_gun_fire":{"sequence":[{"set_property":{"pw:gun_fire":0}},{"remove":{"component_groups":["gun_fire"]}}]},"pw:vfx_sky_crows":{"sequence":[{"weight":10,"queue_command":{"command":["particle pw:sky_crows ~~~","playsound mob.crow.idle @a[r=100] ~~15~ 100 1 0.01","playsound mob.crow.idle @a[r=100] ~~20~ 100 1 0.01"]},"filters":{"all_of":[{"test":"has_biome_tag","value":"overworld"},{"test":"in_water_or_rain","value":false},{"test":"is_underground","value":false},{"test":"is_underwater","value":false},{"test":"is_altitude","operator":">=","value":62},{"test":"is_altitude","operator":"<=","value":200}]}},{"weight":90}]},"pw:ambient_sfx":{"sequence":[{"queue_command":{"command":["playsound ambient.biome.desert.day @s ^5^1^5","playsound ambient.biome.desert.day @s ^-5^-1^-5"]},"filters":{"all_of":[{"test":"has_biome_tag","value":"desert"},{"test":"is_daytime","value":true},{"test":"weather_at_position","value":"clear"},{"test":"is_underground","value":false},{"test":"is_underwater","value":false},{"test":"is_altitude","operator":">=","value":50},{"test":"is_altitude","operator":"<=","value":150}]}},{"queue_command":{"command":["playsound ambient.biome.desert.night @s ^3^1^5","playsound ambient.biome.desert.night @s ^-3^-1^-5"]},"filters":{"all_of":[{"test":"has_biome_tag","value":"desert"},{"test":"is_daytime","value":false},{"test":"weather_at_position","value":"clear"},{"test":"is_underground","value":false},{"test":"is_underwater","value":false},{"test":"is_altitude","operator":">=","value":50},{"test":"is_altitude","operator":"<=","value":150}]}},{"queue_command":{"command":["playsound ambient.biome.desert.day @s ^5^1^5","playsound ambient.biome.desert.day @s ^-5^-1^-5"]},"filters":{"all_of":[{"any_of":[{"test":"has_biome_tag","value":"desert"},{"test":"has_biome_tag","value":"mesa"}]},{"test":"is_daytime","value":true},{"test":"weather_at_position","value":"clear"},{"test":"is_underground","value":false},{"test":"is_underwater","value":false},{"test":"is_altitude","operator":">=","value":50},{"test":"is_altitude","operator":"<=","value":150}]}},{"queue_command":{"command":["playsound ambient.biome.desert.night @s ^5^1^5","playsound ambient.biome.desert.night @s ^-5^-1^-5"]},"filters":{"all_of":[{"any_of":[{"test":"has_biome_tag","value":"desert"},{"test":"has_biome_tag","value":"mesa"}]},{"test":"is_daytime","value":false},{"test":"weather_at_position","value":"clear"},{"test":"is_underground","value":false},{"test":"is_underwater","value":false},{"test":"is_altitude","operator":">=","value":50},{"test":"is_altitude","operator":"<=","value":150}]}},{"queue_command":{"command":["playsound ambient.biome.forest.day @s ^5^1^5","playsound ambient.biome.forest.day @s ^-5^-1^-5"]},"filters":{"all_of":[{"any_of":[{"test":"has_biome_tag","value":"forest"},{"test":"has_biome_tag","value":"flower_forest"},{"test":"has_biome_tag","value":"mountain"},{"test":"has_biome_tag","value":"mountains"},{"test":"has_biome_tag","value":"hills"},{"test":"has_biome_tag","value":"jungle"},{"test":"has_biome_tag","value":"swamp"},{"test":"has_biome_tag","value":"swamp"},{"test":"has_biome_tag","value":"mangrove_swamp"},{"test":"has_biome_tag","value":"grove"}]},{"test":"is_daytime","value":true},{"test":"weather_at_position","value":"clear"},{"test":"is_underground","value":false},{"test":"is_underwater","value":false},{"test":"is_altitude","operator":">=","value":50},{"test":"is_altitude","operator":"<=","value":150}]}},{"queue_command":{"command":["playsound ambient.biome.desert.night @s ^5^1^5","playsound ambient.biome.desert.night @s ^-5^-1^-5"]},"filters":{"all_of":[{"any_of":[{"test":"has_biome_tag","value":"forest"},{"test":"has_biome_tag","value":"flower_forest"},{"test":"has_biome_tag","value":"mountain"},{"test":"has_biome_tag","value":"mountains"},{"test":"has_biome_tag","value":"hills"},{"test":"has_biome_tag","value":"jungle"},{"test":"has_biome_tag","value":"swamp"},{"test":"has_biome_tag","value":"mangrove_swamp"},{"test":"has_biome_tag","value":"grove"}]},{"test":"is_daytime","value":false},{"test":"weather_at_position","value":"clear"},{"test":"is_underground","value":false},{"test":"is_underwater","value":false},{"test":"is_altitude","operator":">=","value":50},{"test":"is_altitude","operator":"<=","value":150}]}},{"queue_command":{"command":["playsound ambient.biome.plains.day @s ^5^1^5","playsound ambient.biome.plains.day @s ^-5^-1^-5"]},"filters":{"all_of":[{"any_of":[{"test":"has_biome_tag","value":"plains"}]},{"test":"is_daytime","value":true},{"test":"weather_at_position","value":"clear"},{"test":"is_underground","value":false},{"test":"is_underwater","value":false},{"test":"is_altitude","operator":">=","value":50},{"test":"is_altitude","operator":"<=","value":150}]}},{"queue_command":{"command":["playsound ambient.biome.plains.night @s ^5^1^5","playsound ambient.biome.plains.night @s ^-5^-1^-5"]},"filters":{"all_of":[{"any_of":[{"test":"has_biome_tag","value":"plains"}]},{"test":"is_daytime","value":false},{"test":"weather_at_position","value":"clear"},{"test":"is_underground","value":false},{"test":"is_underwater","value":false},{"test":"is_altitude","operator":">=","value":50},{"test":"is_altitude","operator":"<=","value":150}]}},{"queue_command":{"command":["playsound ambient.biome.snow.day @s ^5^1^5","playsound ambient.biome.snow.day @s ^-5^-1^-5"]},"filters":{"all_of":[{"any_of":[{"test":"has_biome_tag","value":"cold"},{"test":"has_biome_tag","value":"frozen"},{"test":"has_biome_tag","value":"ice"}]},{"test":"is_daytime","value":true},{"test":"weather_at_position","value":"clear"},{"test":"is_underground","value":false},{"test":"is_underwater","value":false},{"test":"is_altitude","operator":">=","value":50},{"test":"is_altitude","operator":"<=","value":150}]}},{"queue_command":{"command":["playsound ambient.biome.snow.night @s ^5^1^5","playsound ambient.biome.snow.night @s ^-5^-1^-5"]},"filters":{"all_of":[{"any_of":[{"test":"has_biome_tag","value":"cold"},{"test":"has_biome_tag","value":"frozen"},{"test":"has_biome_tag","value":"ice"}]},{"test":"is_daytime","value":false},{"test":"weather_at_position","value":"clear"},{"test":"is_underground","value":false},{"test":"is_underwater","value":false},{"test":"is_altitude","operator":">=","value":50},{"test":"is_altitude","operator":"<=","value":150}]}},{"queue_command":{"command":["playsound ambient.wind @s ^5^1^5","playsound ambient.wind @s ^-5^-1^-5"]},"filters":{"all_of":[{"test":"has_biome_tag","value":"overworld"},{"test":"in_water_or_rain","value":false},{"test":"is_underground","value":false},{"test":"is_underwater","value":false},{"test":"is_altitude","operator":">=","value":50}]}},{"queue_command":{"command":["playsound ambient.wind.strong @s ^5^1^5","playsound ambient.wind.strong @s ^-5^-1^-5"]},"filters":{"all_of":[{"test":"has_biome_tag","value":"overworld"},{"test":"in_water_or_rain","value":true},{"test":"is_underground","value":false},{"test":"is_underwater","value":false},{"test":"is_altitude","operator":">=","value":50}]}},{"queue_command":{"command":["playsound ambient.loop.interior_wind @s ^5^1^5","playsound ambient.loop.interior_wind @s ^-5^-1^-5"]},"filters":{"all_of":[{"test":"has_biome_tag","value":"overworld"},{"test":"is_underground","value":true},{"test":"is_underwater","value":false}]}}]}}}}
+{
+  "format_version": "1.21.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "minecraft:player",
+      "is_spawnable": false,
+      "is_summonable": false,
+      "is_experimental": false,
+      "scripts": {
+        "animate": [
+          "guns_tick_controller",
+          "guns_auto_controller",
+          "guns_semi_controller",
+          "guns_bolt_controller",
+          "guns_sight_controller",
+          "fall_sensor_controller",
+          {
+            "thirst_controller": "q.is_alive"
+          },
+          "nv_goggles_controller",
+          {
+            "hitmark": "q.property('pw:hitmark')"
+          }
+        ]
+      },
+      "animations": {
+        "guns_tick_controller": "controller.animation.player.guns_tick",
+        "guns_auto_controller": "controller.animation.player.guns_auto",
+        "guns_semi_controller": "controller.animation.player.guns_semi",
+        "guns_bolt_controller": "controller.animation.player.guns_bolt",
+        "guns_sight_controller": "controller.animation.player.guns_sight",
+        "fall_sensor_controller": "controller.animation.player.fall_sensor",
+        "thirst_controller": "controller.animation.player.thirst",
+        "nv_goggles_controller": "controller.animation.player.nv_goggles",
+        "hitmark": "animation.player.hitmark"
+      },
+      "properties": {
+        "pw:reloading": {
+          "client_sync": true,
+          "type": "int",
+          "default": 0,
+          "range": [
+            0,
+            1
+          ]
+        },
+        "pw:blocking": {
+          "client_sync": true,
+          "type": "int",
+          "default": 0,
+          "range": [
+            0,
+            1
+          ]
+        },
+        "pw:gun_fire": {
+          "client_sync": true,
+          "type": "int",
+          "default": 0,
+          "range": [
+            0,
+            1
+          ]
+        },
+        "pw:hitmark": {
+          "client_sync": true,
+          "type": "int",
+          "default": 0,
+          "range": [
+            0,
+            1
+          ]
+        }
+      }
+    },
+    "component_groups": {
+      "on_fall_sensor": {
+        "minecraft:damage_sensor": {
+          "triggers": [
+            {
+              "cause": "fall",
+              "on_damage": {
+                "event": "pw:add_broken_leg"
+              }
+            },
+            {
+              "cause": "all",
+              "on_damage": {
+                "event": "pw:on_damage"
+              }
+            }
+          ]
+        }
+      },
+      "off_fall_sensor": {
+        "minecraft:damage_sensor": {
+          "triggers": [
+            {
+              "cause": "all",
+              "on_damage": {
+                "event": "pw:on_damage"
+              }
+            }
+          ]
+        }
+      },
+      "gun_fire": {
+        "minecraft:spawn_entity": {
+          "entities": [
+            {
+              "filters": {
+                "test": "has_equipment",
+                "domain": "hand",
+                "value": "pw:ak12"
+              },
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "pw:bullet",
+              "spawn_event": "pw:bullet_545mm",
+              "num_to_spawn": 1
+            },
+            {
+              "filters": {
+                "test": "has_equipment",
+                "domain": "hand",
+                "value": "pw:ak47"
+              },
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "pw:bullet",
+              "spawn_event": "pw:bullet_762mm",
+              "num_to_spawn": 1
+            },
+            {
+              "filters": {
+                "test": "has_equipment",
+                "domain": "hand",
+                "value": "pw:ak74"
+              },
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "pw:bullet",
+              "spawn_event": "pw:bullet_545mm",
+              "num_to_spawn": 1
+            },
+            {
+              "filters": {
+                "test": "has_equipment",
+                "domain": "hand",
+                "value": "pw:akm"
+              },
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "pw:bullet",
+              "spawn_event": "pw:bullet_762mm",
+              "num_to_spawn": 1
+            },
+            {
+              "filters": {
+                "test": "has_equipment",
+                "domain": "hand",
+                "value": "pw:aug"
+              },
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "pw:bullet",
+              "spawn_event": "pw:bullet_556mm",
+              "num_to_spawn": 1
+            },
+            {
+              "filters": {
+                "test": "has_equipment",
+                "domain": "hand",
+                "value": "pw:famas"
+              },
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "pw:bullet",
+              "spawn_event": "pw:bullet_556mm",
+              "num_to_spawn": 1
+            },
+            {
+              "filters": {
+                "test": "has_equipment",
+                "domain": "hand",
+                "value": "pw:fnfal"
+              },
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "pw:bullet",
+              "spawn_event": "pw:bullet_762mm",
+              "num_to_spawn": 1
+            },
+            {
+              "filters": {
+                "test": "has_equipment",
+                "domain": "hand",
+                "value": "pw:m4"
+              },
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "pw:bullet",
+              "spawn_event": "pw:bullet_556mm",
+              "num_to_spawn": 1
+            },
+            {
+              "filters": {
+                "test": "has_equipment",
+                "domain": "hand",
+                "value": "pw:m16"
+              },
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "pw:bullet",
+              "spawn_event": "pw:bullet_556mm",
+              "num_to_spawn": 1
+            },
+            {
+              "filters": {
+                "test": "has_equipment",
+                "domain": "hand",
+                "value": "pw:sks"
+              },
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "pw:bullet",
+              "spawn_event": "pw:bullet_762mm",
+              "num_to_spawn": 1
+            },
+            {
+              "filters": {
+                "test": "has_equipment",
+                "domain": "hand",
+                "value": "pw:stg44"
+              },
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "pw:bullet",
+              "spawn_event": "pw:bullet_792mm",
+              "num_to_spawn": 1
+            },
+            {
+              "filters": {
+                "test": "has_equipment",
+                "domain": "hand",
+                "value": "pw:rpg7"
+              },
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "pw:bullet",
+              "spawn_event": "pw:rocket_rpg7",
+              "num_to_spawn": 1
+            },
+            {
+              "filters": {
+                "test": "has_equipment",
+                "domain": "hand",
+                "value": "pw:m60"
+              },
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "pw:bullet",
+              "spawn_event": "pw:bullet_762mm",
+              "num_to_spawn": 1
+            },
+            {
+              "filters": {
+                "test": "has_equipment",
+                "domain": "hand",
+                "value": "pw:rpk"
+              },
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "pw:bullet",
+              "spawn_event": "pw:bullet_762mm",
+              "num_to_spawn": 1
+            },
+            {
+              "filters": {
+                "test": "has_equipment",
+                "domain": "hand",
+                "value": "pw:colt_m1892"
+              },
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "pw:bullet",
+              "spawn_event": "pw:bullet_45acp",
+              "num_to_spawn": 1
+            },
+            {
+              "filters": {
+                "test": "has_equipment",
+                "domain": "hand",
+                "value": "pw:colt_python"
+              },
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "pw:bullet",
+              "spawn_event": "pw:bullet_9mm",
+              "num_to_spawn": 1
+            },
+            {
+              "filters": {
+                "test": "has_equipment",
+                "domain": "hand",
+                "value": "pw:deagle"
+              },
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "pw:bullet",
+              "spawn_event": "pw:bullet_50ae",
+              "num_to_spawn": 1
+            },
+            {
+              "filters": {
+                "test": "has_equipment",
+                "domain": "hand",
+                "value": "pw:fs"
+              },
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "pw:bullet",
+              "spawn_event": "pw:bullet_57mm",
+              "num_to_spawn": 1
+            },
+            {
+              "filters": {
+                "test": "has_equipment",
+                "domain": "hand",
+                "value": "pw:glock17"
+              },
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "pw:bullet",
+              "spawn_event": "pw:bullet_9mm",
+              "num_to_spawn": 1
+            },
+            {
+              "filters": {
+                "test": "has_equipment",
+                "domain": "hand",
+                "value": "pw:p350"
+              },
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "pw:bullet",
+              "spawn_event": "pw:bullet_9mm",
+              "num_to_spawn": 1
+            },
+            {
+              "filters": {
+                "test": "has_equipment",
+                "domain": "hand",
+                "value": "pw:tec9"
+              },
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "pw:bullet",
+              "spawn_event": "pw:bullet_9mm",
+              "num_to_spawn": 1
+            },
+            {
+              "filters": {
+                "test": "has_equipment",
+                "domain": "hand",
+                "value": "pw:usp"
+              },
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "pw:bullet",
+              "spawn_event": "pw:bullet_9mm",
+              "num_to_spawn": 1
+            },
+            {
+              "filters": {
+                "test": "has_equipment",
+                "domain": "hand",
+                "value": "pw:m1014"
+              },
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "pw:bullet",
+              "spawn_event": "pw:bullet_12gauge",
+              "num_to_spawn": 12
+            },
+            {
+              "filters": {
+                "test": "has_equipment",
+                "domain": "hand",
+                "value": "pw:sawedoff"
+              },
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "pw:bullet",
+              "spawn_event": "pw:bullet_12gauge",
+              "num_to_spawn": 6
+            },
+            {
+              "filters": {
+                "test": "has_equipment",
+                "domain": "hand",
+                "value": "pw:spas12"
+              },
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "pw:bullet",
+              "spawn_event": "pw:bullet_12gauge",
+              "num_to_spawn": 12
+            },
+            {
+              "filters": {
+                "test": "has_equipment",
+                "domain": "hand",
+                "value": "pw:mac10"
+              },
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "pw:bullet",
+              "spawn_event": "pw:bullet_9mm",
+              "num_to_spawn": 1
+            },
+            {
+              "filters": {
+                "test": "has_equipment",
+                "domain": "hand",
+                "value": "pw:mp5"
+              },
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "pw:bullet",
+              "spawn_event": "pw:bullet_9mm",
+              "num_to_spawn": 1
+            },
+            {
+              "filters": {
+                "test": "has_equipment",
+                "domain": "hand",
+                "value": "pw:mp7"
+              },
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "pw:bullet",
+              "spawn_event": "pw:bullet_9mm",
+              "num_to_spawn": 1
+            },
+            {
+              "filters": {
+                "test": "has_equipment",
+                "domain": "hand",
+                "value": "pw:mp40"
+              },
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "pw:bullet",
+              "spawn_event": "pw:bullet_9mm",
+              "num_to_spawn": 1
+            },
+            {
+              "filters": {
+                "test": "has_equipment",
+                "domain": "hand",
+                "value": "pw:p90"
+              },
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "pw:bullet",
+              "spawn_event": "pw:bullet_57mm",
+              "num_to_spawn": 1
+            },
+            {
+              "filters": {
+                "test": "has_equipment",
+                "domain": "hand",
+                "value": "pw:ppsh"
+              },
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "pw:bullet",
+              "spawn_event": "pw:bullet_762mm",
+              "num_to_spawn": 1
+            },
+            {
+              "filters": {
+                "test": "has_equipment",
+                "domain": "hand",
+                "value": "pw:thompson"
+              },
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "pw:bullet",
+              "spawn_event": "pw:bullet_45acp",
+              "num_to_spawn": 1
+            },
+            {
+              "filters": {
+                "test": "has_equipment",
+                "domain": "hand",
+                "value": "pw:ump45"
+              },
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "pw:bullet",
+              "spawn_event": "pw:bullet_9mm",
+              "num_to_spawn": 1
+            },
+            {
+              "filters": {
+                "test": "has_equipment",
+                "domain": "hand",
+                "value": "pw:awm"
+              },
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "pw:bullet",
+              "spawn_event": "pw:bullet_860mm",
+              "num_to_spawn": 1
+            },
+            {
+              "filters": {
+                "test": "has_equipment",
+                "domain": "hand",
+                "value": "pw:awm_scoped"
+              },
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "pw:bullet",
+              "spawn_event": "pw:bullet_860mm",
+              "num_to_spawn": 1
+            },
+            {
+              "filters": {
+                "test": "has_equipment",
+                "domain": "hand",
+                "value": "pw:kar98k"
+              },
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "pw:bullet",
+              "spawn_event": "pw:bullet_792mm",
+              "num_to_spawn": 1
+            },
+            {
+              "filters": {
+                "test": "has_equipment",
+                "domain": "hand",
+                "value": "pw:kar98k_scoped"
+              },
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "pw:bullet",
+              "spawn_event": "pw:bullet_792mm",
+              "num_to_spawn": 1
+            },
+            {
+              "filters": {
+                "test": "has_equipment",
+                "domain": "hand",
+                "value": "pw:m40"
+              },
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "pw:bullet",
+              "spawn_event": "pw:bullet_762mm",
+              "num_to_spawn": 1
+            },
+            {
+              "filters": {
+                "test": "has_equipment",
+                "domain": "hand",
+                "value": "pw:m40_scoped"
+              },
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "pw:bullet",
+              "spawn_event": "pw:bullet_762mm",
+              "num_to_spawn": 1
+            },
+            {
+              "filters": {
+                "test": "has_equipment",
+                "domain": "hand",
+                "value": "pw:m110"
+              },
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "pw:bullet",
+              "spawn_event": "pw:bullet_762mm",
+              "num_to_spawn": 1
+            },
+            {
+              "filters": {
+                "test": "has_equipment",
+                "domain": "hand",
+                "value": "pw:m110_scoped"
+              },
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "pw:bullet",
+              "spawn_event": "pw:bullet_762mm",
+              "num_to_spawn": 1
+            }
+          ]
+        },
+        "minecraft:timer": {
+          "time": 0.025,
+          "looping": false,
+          "time_down_event": {
+            "event": "pw:remove_gun_fire"
+          }
+        }
+      }
+    },
+    "components": {
+      "minecraft:experience_reward": {
+        "on_death": "math.min(q.player_level*10,100)"
+      },
+      "minecraft:type_family": {
+        "family": [
+          "player"
+        ]
+      },
+      "minecraft:is_hidden_when_invisible": {},
+      "minecraft:loot": {
+        "table": "loot_tables/empty.json"
+      },
+      "minecraft:collision_box": {
+        "width": 0.6,
+        "height": 1.8
+      },
+      "minecraft:can_climb": {},
+      "minecraft:movement": {
+        "value": 0.1
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": {
+              "test": "in_lava",
+              "value": true
+            },
+            "cause": "lava",
+            "damage_per_tick": 4
+          }
+        ]
+      },
+      "minecraft:attack": {
+        "damage": 2
+      },
+      "minecraft:exhaustion_values": {
+        "heal": 6,
+        "jump": 0.06,
+        "sprint_jump": 0.2,
+        "mine": 0.006,
+        "attack": 0.2,
+        "damage": 0.2,
+        "walk": 0.002,
+        "sprint": 0.2,
+        "swim": 0.02
+      },
+      "minecraft:player.saturation": {
+        "value": 5,
+        "max": 20
+      },
+      "minecraft:player.exhaustion": {
+        "value": 0,
+        "max": 20
+      },
+      "minecraft:player.level": {
+        "value": 0,
+        "max": 24791
+      },
+      "minecraft:player.experience": {
+        "value": 0,
+        "max": 1
+      },
+      "minecraft:breathable": {
+        "total_supply": 15,
+        "suffocate_time": -1,
+        "inhale_time": 3.75,
+        "generates_bubbles": false
+      },
+      "minecraft:nameable": {
+        "always_show": true,
+        "allow_name_tag_renaming": false
+      },
+      "minecraft:physics": {
+        "push_towards_closest_space": true
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:insomnia": {
+        "days_until_insomnia": 3
+      },
+      "minecraft:conditional_bandwidth_optimization": {},
+      "minecraft:block_climber": {},
+      "minecraft:environment_sensor": {
+        "triggers": [
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "is_underground",
+                  "value": true
+                },
+                {
+                  "test": "is_underwater",
+                  "value": false
+                }
+              ]
+            },
+            "event": "pw:add_underground"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "is_underground",
+                  "value": false
+                }
+              ]
+            },
+            "event": "pw:remove_underground"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "is_sneaking",
+                  "value": true
+                }
+              ]
+            },
+            "event": "pw:add_sneaking"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "is_sneaking",
+                  "value": false
+                }
+              ]
+            },
+            "event": "pw:remove_sneaking"
+          }
+        ]
+      },
+      "minecraft:on_death": {
+        "event": "pw:on_death"
+      },
+      "minecraft:knockback_resistance": {
+        "value": 0.4
+      },
+      "minecraft:npc": {
+        "npc_data": {
+          "portrait_offsets": {
+            "translate": [
+              -7,
+              50,
+              0
+            ],
+            "scale": [
+              1.75,
+              1.75,
+              1.75
+            ]
+          },
+          "picker_offsets": {
+            "translate": [
+              0,
+              20,
+              0
+            ],
+            "scale": [
+              1.7,
+              1.7,
+              1.7
+            ]
+          }
+        }
+      },
+      "minecraft:interact": {
+        "interactions": [
+          {}
+        ]
+      }
+    },
+    "events": {
+      "pw:on_damage": {
+        "sequence": [
+          {
+            "filters": {
+              "test": "has_damage",
+              "operator": "!=",
+              "value": "projectile"
+            },
+            "sequence": [
+              {
+                "queue_command": {
+                  "command": [
+                    "particle pw:blood_0 ~~0.4~"
+                  ]
+                }
+              },
+              {
+                "randomize": [
+                  {
+                    "weight": 20,
+                    "filters": {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "infected"
+                    },
+                    "trigger": "pw:add_infection"
+                  },
+                  {
+                    "weight": 70
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "filters": {
+              "test": "has_damage",
+              "value": "projectile"
+            },
+            "sequence": [
+              {
+                "queue_command": {
+                  "command": [
+                    "particle pw:blood_1 ~~0.4~"
+                  ]
+                }
+              },
+              {
+                "randomize": [
+                  {
+                    "weight": 25,
+                    "trigger": "pw:add_bleeding"
+                  },
+                  {
+                    "weight": 75
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "filters": {
+              "any_of": [
+                {
+                  "test": "has_damage",
+                  "value": "block_explosion"
+                },
+                {
+                  "test": "has_damage",
+                  "value": "entity_explosion"
+                }
+              ]
+            },
+            "sequence": [
+              {
+                "queue_command": {
+                  "command": [
+                    "playsound effect.player.blind @s",
+                    "particle pw:blood_1 ~0.4~0.4~",
+                    "particle pw:blood_1 ~-0.4~0.4~",
+                    "particle pw:blood_1 ~~0.4~0.4",
+                    "particle pw:blood_1 ~~0.4~-0.4"
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "pw:on_death": {
+        "sequence": [
+          {
+            "queue_command": {
+              "command": [
+                "playsound mob.human.death @a[rm=0, r=10] ^^^ 100 1 0.01",
+                "playsound mob.human.death_distant @a[rm=11, r=200] ^^^ 100 1 0.01",
+                "scoreboard players set @s thirst 20",
+                "scoreboard players set @s blood 20",
+                "scoreboard players add @s deaths 1",
+                "execute as @s[tag=infection] run summon pw:walker ^^^"
+              ]
+            }
+          },
+          {
+            "trigger": "pw:reset_stats"
+          }
+        ]
+      },
+      "pw:reset_stats": {
+        "sequence": [
+          {
+            "trigger": "pw:remove_broken_leg"
+          },
+          {
+            "trigger": "pw:remove_infection"
+          },
+          {
+            "trigger": "pw:remove_bleeding"
+          }
+        ]
+      },
+      "pw:add_broken_leg": {
+        "randomize": [
+          {
+            "queue_command": {
+              "command": [
+                "tellraw @s[tag=!broken_leg] {\"rawtext\":[{\"translate\":\"game.message.broken_leg\"}]}",
+                "playsound effect.player.break_bone @a[r=10] ~~~ 1 1 0.01",
+                "effect @s blindness 5 2 true",
+                "tag @s[tag=!broken_leg] add broken_leg"
+              ]
+            }
+          },
+          {}
+        ]
+      },
+      "pw:remove_broken_leg": {
+        "queue_command": {
+          "command": [
+            "tag @s[tag=broken_leg] remove broken_leg",
+            "effect @s slowness 0 0 true"
+          ]
+        }
+      },
+      "pw:add_infection": {
+        "queue_command": {
+          "command": [
+            "tellraw @s[tag=!infection] {\"rawtext\":[{\"translate\":\"game.message.infected\"}]}",
+            "tag @s[tag=!infection] add infection"
+          ]
+        }
+      },
+      "pw:remove_infection": {
+        "queue_command": {
+          "command": [
+            "tag @s[tag=infection] remove infection",
+            "effect @s hunger 0 0 true"
+          ]
+        }
+      },
+      "pw:add_bleeding": {
+        "queue_command": {
+          "command": [
+            "tellraw @s {\"rawtext\":[{\"translate\":\"game.message.bleeding\"}]}",
+            "effect @s poison 30 4 true"
+          ]
+        }
+      },
+      "pw:remove_bleeding": {
+        "queue_command": {
+          "command": [
+            "effect @s poison 0 0 true"
+          ]
+        }
+      },
+      "pw:add_toxic": {
+        "queue_command": {
+          "command": [
+            "tellraw @s {\"rawtext\":[{\"translate\":\"game.message.toxic\"}]}",
+            "effect @s wither 30 3 true"
+          ]
+        }
+      },
+      "pw:remove_toxic": {
+        "queue_command": {
+          "command": [
+            "effect @s wither 0 0 true"
+          ]
+        }
+      },
+      "pw:add_fall_sensor": {
+        "remove": {
+          "component_groups": [
+            "off_fall_sensor"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "on_fall_sensor"
+          ]
+        }
+      },
+      "pw:remove_fall_sensor": {
+        "remove": {
+          "component_groups": [
+            "on_fall_sensor"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "off_fall_sensor"
+          ]
+        }
+      },
+      "pw:add_hitmark": {
+        "sequence": [
+          {
+            "queue_command": {
+              "command": [
+                "playsound effect.player.hitmarker @s"
+              ]
+            }
+          },
+          {
+            "set_property": {
+              "pw:hitmark": 1
+            }
+          }
+        ]
+      },
+      "pw:remove_hitmark": {
+        "set_property": {
+          "pw:hitmark": 0
+        }
+      },
+      "pw:add_reloading": {
+        "set_property": {
+          "pw:reloading": 1
+        }
+      },
+      "pw:remove_reloading": {
+        "set_property": {
+          "pw:reloading": 0
+        }
+      },
+      "pw:add_blocking": {
+        "set_property": {
+          "pw:blocking": 1
+        }
+      },
+      "pw:remove_blocking": {
+        "set_property": {
+          "pw:blocking": 0
+        }
+      },
+      "pw:add_underground": {
+        "queue_command": {
+          "command": [
+            "tag @s[tag=!underground] add underground"
+          ]
+        }
+      },
+      "pw:remove_underground": {
+        "queue_command": {
+          "command": [
+            "tag @s[tag=underground] remove underground"
+          ]
+        }
+      },
+      "pw:add_sneaking": {
+        "queue_command": {
+          "command": [
+            "tag @s[tag=!sneaking] add sneaking"
+          ]
+        }
+      },
+      "pw:remove_sneaking": {
+        "queue_command": {
+          "command": [
+            "tag @s[tag=sneaking] remove sneaking"
+          ]
+        }
+      },
+      "pw:gun_fire": {
+        "sequence": [
+          {
+            "set_property": {
+              "pw:gun_fire": 1
+            }
+          },
+          {
+            "add": {
+              "component_groups": [
+                "gun_fire"
+              ]
+            }
+          }
+        ]
+      },
+      "pw:remove_gun_fire": {
+        "sequence": [
+          {
+            "set_property": {
+              "pw:gun_fire": 0
+            }
+          },
+          {
+            "remove": {
+              "component_groups": [
+                "gun_fire"
+              ]
+            }
+          }
+        ]
+      },
+      "pw:vfx_sky_crows": {
+        "sequence": [
+          {
+            "weight": 10,
+            "queue_command": {
+              "command": [
+                "particle pw:sky_crows ~~~",
+                "playsound mob.crow.idle @a[r=100] ~~15~ 100 1 0.01",
+                "playsound mob.crow.idle @a[r=100] ~~20~ 100 1 0.01"
+              ]
+            },
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_biome_tag",
+                  "value": "overworld"
+                },
+                {
+                  "test": "in_water_or_rain",
+                  "value": false
+                },
+                {
+                  "test": "is_underground",
+                  "value": false
+                },
+                {
+                  "test": "is_underwater",
+                  "value": false
+                },
+                {
+                  "test": "is_altitude",
+                  "operator": ">=",
+                  "value": 62
+                },
+                {
+                  "test": "is_altitude",
+                  "operator": "<=",
+                  "value": 200
+                }
+              ]
+            }
+          },
+          {
+            "weight": 90
+          }
+        ]
+      },
+      "pw:ambient_sfx": {
+        "sequence": [
+          {
+            "queue_command": {
+              "command": [
+                "playsound ambient.biome.desert.day @s ^5^1^5",
+                "playsound ambient.biome.desert.day @s ^-5^-1^-5"
+              ]
+            },
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_biome_tag",
+                  "value": "desert"
+                },
+                {
+                  "test": "is_daytime",
+                  "value": true
+                },
+                {
+                  "test": "weather_at_position",
+                  "value": "clear"
+                },
+                {
+                  "test": "is_underground",
+                  "value": false
+                },
+                {
+                  "test": "is_underwater",
+                  "value": false
+                },
+                {
+                  "test": "is_altitude",
+                  "operator": ">=",
+                  "value": 50
+                },
+                {
+                  "test": "is_altitude",
+                  "operator": "<=",
+                  "value": 150
+                }
+              ]
+            }
+          },
+          {
+            "queue_command": {
+              "command": [
+                "playsound ambient.biome.desert.night @s ^3^1^5",
+                "playsound ambient.biome.desert.night @s ^-3^-1^-5"
+              ]
+            },
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_biome_tag",
+                  "value": "desert"
+                },
+                {
+                  "test": "is_daytime",
+                  "value": false
+                },
+                {
+                  "test": "weather_at_position",
+                  "value": "clear"
+                },
+                {
+                  "test": "is_underground",
+                  "value": false
+                },
+                {
+                  "test": "is_underwater",
+                  "value": false
+                },
+                {
+                  "test": "is_altitude",
+                  "operator": ">=",
+                  "value": 50
+                },
+                {
+                  "test": "is_altitude",
+                  "operator": "<=",
+                  "value": 150
+                }
+              ]
+            }
+          },
+          {
+            "queue_command": {
+              "command": [
+                "playsound ambient.biome.desert.day @s ^5^1^5",
+                "playsound ambient.biome.desert.day @s ^-5^-1^-5"
+              ]
+            },
+            "filters": {
+              "all_of": [
+                {
+                  "any_of": [
+                    {
+                      "test": "has_biome_tag",
+                      "value": "desert"
+                    },
+                    {
+                      "test": "has_biome_tag",
+                      "value": "mesa"
+                    }
+                  ]
+                },
+                {
+                  "test": "is_daytime",
+                  "value": true
+                },
+                {
+                  "test": "weather_at_position",
+                  "value": "clear"
+                },
+                {
+                  "test": "is_underground",
+                  "value": false
+                },
+                {
+                  "test": "is_underwater",
+                  "value": false
+                },
+                {
+                  "test": "is_altitude",
+                  "operator": ">=",
+                  "value": 50
+                },
+                {
+                  "test": "is_altitude",
+                  "operator": "<=",
+                  "value": 150
+                }
+              ]
+            }
+          },
+          {
+            "queue_command": {
+              "command": [
+                "playsound ambient.biome.desert.night @s ^5^1^5",
+                "playsound ambient.biome.desert.night @s ^-5^-1^-5"
+              ]
+            },
+            "filters": {
+              "all_of": [
+                {
+                  "any_of": [
+                    {
+                      "test": "has_biome_tag",
+                      "value": "desert"
+                    },
+                    {
+                      "test": "has_biome_tag",
+                      "value": "mesa"
+                    }
+                  ]
+                },
+                {
+                  "test": "is_daytime",
+                  "value": false
+                },
+                {
+                  "test": "weather_at_position",
+                  "value": "clear"
+                },
+                {
+                  "test": "is_underground",
+                  "value": false
+                },
+                {
+                  "test": "is_underwater",
+                  "value": false
+                },
+                {
+                  "test": "is_altitude",
+                  "operator": ">=",
+                  "value": 50
+                },
+                {
+                  "test": "is_altitude",
+                  "operator": "<=",
+                  "value": 150
+                }
+              ]
+            }
+          },
+          {
+            "queue_command": {
+              "command": [
+                "playsound ambient.biome.forest.day @s ^5^1^5",
+                "playsound ambient.biome.forest.day @s ^-5^-1^-5"
+              ]
+            },
+            "filters": {
+              "all_of": [
+                {
+                  "any_of": [
+                    {
+                      "test": "has_biome_tag",
+                      "value": "forest"
+                    },
+                    {
+                      "test": "has_biome_tag",
+                      "value": "flower_forest"
+                    },
+                    {
+                      "test": "has_biome_tag",
+                      "value": "mountain"
+                    },
+                    {
+                      "test": "has_biome_tag",
+                      "value": "mountains"
+                    },
+                    {
+                      "test": "has_biome_tag",
+                      "value": "hills"
+                    },
+                    {
+                      "test": "has_biome_tag",
+                      "value": "jungle"
+                    },
+                    {
+                      "test": "has_biome_tag",
+                      "value": "swamp"
+                    },
+                    {
+                      "test": "has_biome_tag",
+                      "value": "swamp"
+                    },
+                    {
+                      "test": "has_biome_tag",
+                      "value": "mangrove_swamp"
+                    },
+                    {
+                      "test": "has_biome_tag",
+                      "value": "grove"
+                    }
+                  ]
+                },
+                {
+                  "test": "is_daytime",
+                  "value": true
+                },
+                {
+                  "test": "weather_at_position",
+                  "value": "clear"
+                },
+                {
+                  "test": "is_underground",
+                  "value": false
+                },
+                {
+                  "test": "is_underwater",
+                  "value": false
+                },
+                {
+                  "test": "is_altitude",
+                  "operator": ">=",
+                  "value": 50
+                },
+                {
+                  "test": "is_altitude",
+                  "operator": "<=",
+                  "value": 150
+                }
+              ]
+            }
+          },
+          {
+            "queue_command": {
+              "command": [
+                "playsound ambient.biome.desert.night @s ^5^1^5",
+                "playsound ambient.biome.desert.night @s ^-5^-1^-5"
+              ]
+            },
+            "filters": {
+              "all_of": [
+                {
+                  "any_of": [
+                    {
+                      "test": "has_biome_tag",
+                      "value": "forest"
+                    },
+                    {
+                      "test": "has_biome_tag",
+                      "value": "flower_forest"
+                    },
+                    {
+                      "test": "has_biome_tag",
+                      "value": "mountain"
+                    },
+                    {
+                      "test": "has_biome_tag",
+                      "value": "mountains"
+                    },
+                    {
+                      "test": "has_biome_tag",
+                      "value": "hills"
+                    },
+                    {
+                      "test": "has_biome_tag",
+                      "value": "jungle"
+                    },
+                    {
+                      "test": "has_biome_tag",
+                      "value": "swamp"
+                    },
+                    {
+                      "test": "has_biome_tag",
+                      "value": "mangrove_swamp"
+                    },
+                    {
+                      "test": "has_biome_tag",
+                      "value": "grove"
+                    }
+                  ]
+                },
+                {
+                  "test": "is_daytime",
+                  "value": false
+                },
+                {
+                  "test": "weather_at_position",
+                  "value": "clear"
+                },
+                {
+                  "test": "is_underground",
+                  "value": false
+                },
+                {
+                  "test": "is_underwater",
+                  "value": false
+                },
+                {
+                  "test": "is_altitude",
+                  "operator": ">=",
+                  "value": 50
+                },
+                {
+                  "test": "is_altitude",
+                  "operator": "<=",
+                  "value": 150
+                }
+              ]
+            }
+          },
+          {
+            "queue_command": {
+              "command": [
+                "playsound ambient.biome.plains.day @s ^5^1^5",
+                "playsound ambient.biome.plains.day @s ^-5^-1^-5"
+              ]
+            },
+            "filters": {
+              "all_of": [
+                {
+                  "any_of": [
+                    {
+                      "test": "has_biome_tag",
+                      "value": "plains"
+                    }
+                  ]
+                },
+                {
+                  "test": "is_daytime",
+                  "value": true
+                },
+                {
+                  "test": "weather_at_position",
+                  "value": "clear"
+                },
+                {
+                  "test": "is_underground",
+                  "value": false
+                },
+                {
+                  "test": "is_underwater",
+                  "value": false
+                },
+                {
+                  "test": "is_altitude",
+                  "operator": ">=",
+                  "value": 50
+                },
+                {
+                  "test": "is_altitude",
+                  "operator": "<=",
+                  "value": 150
+                }
+              ]
+            }
+          },
+          {
+            "queue_command": {
+              "command": [
+                "playsound ambient.biome.plains.night @s ^5^1^5",
+                "playsound ambient.biome.plains.night @s ^-5^-1^-5"
+              ]
+            },
+            "filters": {
+              "all_of": [
+                {
+                  "any_of": [
+                    {
+                      "test": "has_biome_tag",
+                      "value": "plains"
+                    }
+                  ]
+                },
+                {
+                  "test": "is_daytime",
+                  "value": false
+                },
+                {
+                  "test": "weather_at_position",
+                  "value": "clear"
+                },
+                {
+                  "test": "is_underground",
+                  "value": false
+                },
+                {
+                  "test": "is_underwater",
+                  "value": false
+                },
+                {
+                  "test": "is_altitude",
+                  "operator": ">=",
+                  "value": 50
+                },
+                {
+                  "test": "is_altitude",
+                  "operator": "<=",
+                  "value": 150
+                }
+              ]
+            }
+          },
+          {
+            "queue_command": {
+              "command": [
+                "playsound ambient.biome.snow.day @s ^5^1^5",
+                "playsound ambient.biome.snow.day @s ^-5^-1^-5"
+              ]
+            },
+            "filters": {
+              "all_of": [
+                {
+                  "any_of": [
+                    {
+                      "test": "has_biome_tag",
+                      "value": "cold"
+                    },
+                    {
+                      "test": "has_biome_tag",
+                      "value": "frozen"
+                    },
+                    {
+                      "test": "has_biome_tag",
+                      "value": "ice"
+                    }
+                  ]
+                },
+                {
+                  "test": "is_daytime",
+                  "value": true
+                },
+                {
+                  "test": "weather_at_position",
+                  "value": "clear"
+                },
+                {
+                  "test": "is_underground",
+                  "value": false
+                },
+                {
+                  "test": "is_underwater",
+                  "value": false
+                },
+                {
+                  "test": "is_altitude",
+                  "operator": ">=",
+                  "value": 50
+                },
+                {
+                  "test": "is_altitude",
+                  "operator": "<=",
+                  "value": 150
+                }
+              ]
+            }
+          },
+          {
+            "queue_command": {
+              "command": [
+                "playsound ambient.biome.snow.night @s ^5^1^5",
+                "playsound ambient.biome.snow.night @s ^-5^-1^-5"
+              ]
+            },
+            "filters": {
+              "all_of": [
+                {
+                  "any_of": [
+                    {
+                      "test": "has_biome_tag",
+                      "value": "cold"
+                    },
+                    {
+                      "test": "has_biome_tag",
+                      "value": "frozen"
+                    },
+                    {
+                      "test": "has_biome_tag",
+                      "value": "ice"
+                    }
+                  ]
+                },
+                {
+                  "test": "is_daytime",
+                  "value": false
+                },
+                {
+                  "test": "weather_at_position",
+                  "value": "clear"
+                },
+                {
+                  "test": "is_underground",
+                  "value": false
+                },
+                {
+                  "test": "is_underwater",
+                  "value": false
+                },
+                {
+                  "test": "is_altitude",
+                  "operator": ">=",
+                  "value": 50
+                },
+                {
+                  "test": "is_altitude",
+                  "operator": "<=",
+                  "value": 150
+                }
+              ]
+            }
+          },
+          {
+            "queue_command": {
+              "command": [
+                "playsound ambient.wind @s ^5^1^5",
+                "playsound ambient.wind @s ^-5^-1^-5"
+              ]
+            },
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_biome_tag",
+                  "value": "overworld"
+                },
+                {
+                  "test": "in_water_or_rain",
+                  "value": false
+                },
+                {
+                  "test": "is_underground",
+                  "value": false
+                },
+                {
+                  "test": "is_underwater",
+                  "value": false
+                },
+                {
+                  "test": "is_altitude",
+                  "operator": ">=",
+                  "value": 50
+                }
+              ]
+            }
+          },
+          {
+            "queue_command": {
+              "command": [
+                "playsound ambient.wind.strong @s ^5^1^5",
+                "playsound ambient.wind.strong @s ^-5^-1^-5"
+              ]
+            },
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_biome_tag",
+                  "value": "overworld"
+                },
+                {
+                  "test": "in_water_or_rain",
+                  "value": true
+                },
+                {
+                  "test": "is_underground",
+                  "value": false
+                },
+                {
+                  "test": "is_underwater",
+                  "value": false
+                },
+                {
+                  "test": "is_altitude",
+                  "operator": ">=",
+                  "value": 50
+                }
+              ]
+            }
+          },
+          {
+            "queue_command": {
+              "command": [
+                "playsound ambient.loop.interior_wind @s ^5^1^5",
+                "playsound ambient.loop.interior_wind @s ^-5^-1^-5"
+              ]
+            },
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_biome_tag",
+                  "value": "overworld"
+                },
+                {
+                  "test": "is_underground",
+                  "value": true
+                },
+                {
+                  "test": "is_underwater",
+                  "value": false
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

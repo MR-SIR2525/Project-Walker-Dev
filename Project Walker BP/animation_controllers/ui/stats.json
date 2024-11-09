@@ -1,1 +1,66 @@
-{"format_version":"1.21.0","animation_controllers":{"controller.animation.player.thirst":{"initial_state":"default","states":{"default":{"transitions":[{"cooldown_down":"q.scoreboard('thirst')>=1"},{"cooldown_empty":"q.scoreboard('thirst')<=0"}]},"cooldown_down":{"on_entry":["v.thirst_cooldown=q.life_time;"],"on_exit":["v.thirst_cooldown=0;"],"transitions":[{"down":"(q.life_time-v.thirst_cooldown)>=(q.is_sprinting?50:60)"}]},"cooldown_empty":{"on_entry":["v.thirst_cooldown=q.life_time;"],"on_exit":["v.thirst_cooldown=0;"],"transitions":[{"empty":"(q.life_time-v.thirst_cooldown)>=(q.is_sprinting?4:6)"}]},"down":{"on_entry":["/scriptevent pw:thirst_countdown"],"transitions":[{"default":"1"}]},"empty":{"on_entry":["/damage @s 4 temperature"],"transitions":[{"default":"1"}]}}}}}
+{
+  "format_version": "1.21.0",
+  "animation_controllers": {
+    "controller.animation.player.thirst": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "cooldown_down": "q.scoreboard('thirst')>=1"
+            },
+            {
+              "cooldown_empty": "q.scoreboard('thirst')<=0"
+            }
+          ]
+        },
+        "cooldown_down": {
+          "on_entry": [
+            "v.thirst_cooldown=q.life_time;"
+          ],
+          "on_exit": [
+            "v.thirst_cooldown=0;"
+          ],
+          "transitions": [
+            {
+              "down": "(q.life_time-v.thirst_cooldown)>=(q.is_sprinting?50:60)"
+            }
+          ]
+        },
+        "cooldown_empty": {
+          "on_entry": [
+            "v.thirst_cooldown=q.life_time;"
+          ],
+          "on_exit": [
+            "v.thirst_cooldown=0;"
+          ],
+          "transitions": [
+            {
+              "empty": "(q.life_time-v.thirst_cooldown)>=(q.is_sprinting?4:6)"
+            }
+          ]
+        },
+        "down": {
+          "on_entry": [
+            "/scriptevent pw:thirst_countdown"
+          ],
+          "transitions": [
+            {
+              "default": "1"
+            }
+          ]
+        },
+        "empty": {
+          "on_entry": [
+            "/damage @s 4 temperature"
+          ],
+          "transitions": [
+            {
+              "default": "1"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

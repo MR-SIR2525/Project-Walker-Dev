@@ -1,1 +1,206 @@
-{"format_version":"1.21.0","animation_controllers":{"controller.animation.player.guns_tick":{"initial_state":"inactive","states":{"inactive":{"transitions":[{"tick":"q.equipped_item_all_tags('slot.weapon.mainhand','pw:is_gun')"}]},"tick":{"on_entry":["/function guns/effect/tick"],"transitions":[{"inactive":"1"}]}}},"controller.animation.player.guns_auto":{"initial_state":"inactive","states":{"inactive":{"transitions":[{"fire":"q.equipped_item_all_tags('slot.weapon.mainhand','pw:is_auto')&&q.main_hand_item_use_duration&&q.is_alive"}]},"delay":{"on_entry":["v.gun_delay=q.life_time;"],"on_exit":["v.gun_delay=0;"],"transitions":[{"inactive":"!q.equipped_item_all_tags('slot.weapon.mainhand','pw:is_auto')||!q.main_hand_item_use_duration||!q.is_alive"},{"fire":"(q.life_time-v.gun_delay)>=q.cooldown_time('slot.weapon.mainhand')&&q.main_hand_item_use_duration&&q.is_alive"}]},"fire":{"on_entry":["/function guns/effect/fire"],"on_exit":["v.gun_delay=0;"],"transitions":[{"inactive":"!q.equipped_item_all_tags('slot.weapon.mainhand','pw:is_auto')||!q.main_hand_item_use_duration||!q.is_alive"},{"delay":"q.equipped_item_all_tags('slot.weapon.mainhand','pw:is_auto')&&q.main_hand_item_use_duration&&q.is_alive"}]}}},"controller.animation.player.guns_semi":{"initial_state":"inactive","states":{"inactive":{"transitions":[{"fire":"q.equipped_item_all_tags('slot.weapon.mainhand','pw:is_semi')&&q.main_hand_item_use_duration&&q.is_alive"}]},"delay":{"on_entry":["v.gun_delay=q.life_time;"],"on_exit":["v.gun_delay=0;"],"transitions":[{"inactive":"!q.equipped_item_all_tags('slot.weapon.mainhand','pw:is_semi')||!q.main_hand_item_use_duration||!q.is_alive"},{"fire":"(q.life_time-v.gun_delay)>=q.cooldown_time('slot.weapon.mainhand')&&q.main_hand_item_use_duration&&q.is_alive"}]},"fire":{"on_entry":["/function guns/effect/fire"],"on_exit":["v.gun_delay=0;"],"transitions":[{"inactive":"!q.equipped_item_all_tags('slot.weapon.mainhand','pw:is_semi')||!q.main_hand_item_use_duration||!q.is_alive"},{"delay":"q.equipped_item_all_tags('slot.weapon.mainhand','pw:is_semi')&&q.main_hand_item_use_duration&&q.is_alive"}]}}},"controller.animation.player.guns_bolt":{"initial_state":"inactive","states":{"inactive":{"transitions":[{"fire":"q.equipped_item_all_tags('slot.weapon.mainhand','pw:is_bolt')&&q.main_hand_item_use_duration&&q.is_alive"}]},"fire":{"on_entry":["/function guns/effect/fire"],"transitions":[{"inactive":"!q.equipped_item_all_tags('slot.weapon.mainhand','pw:is_bolt')||!q.main_hand_item_use_duration||!q.is_alive"}]}}},"controller.animation.player.guns_sight":{"initial_state":"inactive","states":{"inactive":{"transitions":[{"default":"q.equipped_item_all_tags('slot.weapon.mainhand','pw:is_gun')&&!q.equipped_item_any_tag('slot.weapon.mainhand','pw:has_scope','pw:has_sight')&&!q.property('pw:blocking')&&!q.property('pw:reloading')&&q.is_sneaking&&q.is_alive"},{"sight":"q.equipped_item_any_tag('slot.weapon.mainhand','pw:has_sight')&&!q.property('pw:blocking')&&!q.property('pw:reloading')&&q.is_sneaking&&q.is_alive"},{"scope":"q.equipped_item_any_tag('slot.weapon.mainhand','pw:has_scope')&&!q.property('pw:blocking')&&!q.property('pw:reloading')&&q.is_sneaking&&q.is_alive"}]},"default":{"transitions":[{"inactive":"!q.equipped_item_all_tags('slot.weapon.mainhand','pw:is_gun')||q.equipped_item_any_tag('slot.weapon.mainhand','pw:has_scope','pw:has_sight')||q.property('pw:blocking')||q.property('pw:reloading')||!q.is_sneaking||!q.is_alive"}],"on_entry":["/camerashake add @s 0.08 0.2 rotational","/playsound effect.gun.ads_in @a[r=20] ~~~ 1 1 0.01","/effect @s slowness 3600 1 true"],"on_exit":["/camerashake add @s 0.08 0.2 rotational","/playsound effect.gun.ads_out @a[r=20] ~~~ 1 1 0.01","/effect @s slowness 0 0"]},"sight":{"transitions":[{"inactive":"!q.equipped_item_any_tag('slot.weapon.mainhand','pw:has_sight')||q.property('pw:blocking')||q.property('pw:reloading')||!q.is_sneaking||!q.is_alive"}],"on_entry":["/camerashake add @s 0.08 0.2 rotational","/playsound effect.gun.lean_in @a[r=20] ~~~ 1 1 0.01","/effect @s slowness 3600 4 true"],"on_exit":["/camerashake add @s 0.08 0.2 rotational","/playsound effect.gun.lean_out @a[r=20] ~~~ 1 1 0.01","/effect @s slowness 0 0"]},"scope":{"transitions":[{"inactive":"!q.equipped_item_any_tag('slot.weapon.mainhand','pw:has_scope')||q.property('pw:blocking')||q.property('pw:reloading')||!q.is_sneaking||!q.is_alive"}],"on_entry":["/camerashake add @s 0.08 0.2 rotational","/playsound effect.gun.lean_in @a[r=20] ~~~ 1 1 0.01","/effect @s slowness 3600 8 true"],"on_exit":["/camerashake add @s 0.08 0.2 rotational","/playsound effect.gun.lean_out @a[r=20] ~~~ 1 1 0.01","/effect @s slowness 0 0"]}}}}}
+{
+  "format_version": "1.21.0",
+  "animation_controllers": {
+    "controller.animation.player.guns_tick": {
+      "initial_state": "inactive",
+      "states": {
+        "inactive": {
+          "transitions": [
+            {
+              "tick": "q.equipped_item_all_tags('slot.weapon.mainhand','pw:is_gun')"
+            }
+          ]
+        },
+        "tick": {
+          "on_entry": [
+            "/function guns/effect/tick"
+          ],
+          "transitions": [
+            {
+              "inactive": "1"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.player.guns_auto": {
+      "initial_state": "inactive",
+      "states": {
+        "inactive": {
+          "transitions": [
+            {
+              "fire": "q.equipped_item_all_tags('slot.weapon.mainhand','pw:is_auto')&&q.main_hand_item_use_duration&&q.is_alive"
+            }
+          ]
+        },
+        "delay": {
+          "on_entry": [
+            "v.gun_delay=q.life_time;"
+          ],
+          "on_exit": [
+            "v.gun_delay=0;"
+          ],
+          "transitions": [
+            {
+              "inactive": "!q.equipped_item_all_tags('slot.weapon.mainhand','pw:is_auto')||!q.main_hand_item_use_duration||!q.is_alive"
+            },
+            {
+              "fire": "(q.life_time-v.gun_delay)>=q.cooldown_time('slot.weapon.mainhand')&&q.main_hand_item_use_duration&&q.is_alive"
+            }
+          ]
+        },
+        "fire": {
+          "on_entry": [
+            "/function guns/effect/fire"
+          ],
+          "on_exit": [
+            "v.gun_delay=0;"
+          ],
+          "transitions": [
+            {
+              "inactive": "!q.equipped_item_all_tags('slot.weapon.mainhand','pw:is_auto')||!q.main_hand_item_use_duration||!q.is_alive"
+            },
+            {
+              "delay": "q.equipped_item_all_tags('slot.weapon.mainhand','pw:is_auto')&&q.main_hand_item_use_duration&&q.is_alive"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.player.guns_semi": {
+      "initial_state": "inactive",
+      "states": {
+        "inactive": {
+          "transitions": [
+            {
+              "fire": "q.equipped_item_all_tags('slot.weapon.mainhand','pw:is_semi')&&q.main_hand_item_use_duration&&q.is_alive"
+            }
+          ]
+        },
+        "delay": {
+          "on_entry": [
+            "v.gun_delay=q.life_time;"
+          ],
+          "on_exit": [
+            "v.gun_delay=0;"
+          ],
+          "transitions": [
+            {
+              "inactive": "!q.equipped_item_all_tags('slot.weapon.mainhand','pw:is_semi')||!q.main_hand_item_use_duration||!q.is_alive"
+            },
+            {
+              "fire": "(q.life_time-v.gun_delay)>=q.cooldown_time('slot.weapon.mainhand')&&q.main_hand_item_use_duration&&q.is_alive"
+            }
+          ]
+        },
+        "fire": {
+          "on_entry": [
+            "/function guns/effect/fire"
+          ],
+          "on_exit": [
+            "v.gun_delay=0;"
+          ],
+          "transitions": [
+            {
+              "inactive": "!q.equipped_item_all_tags('slot.weapon.mainhand','pw:is_semi')||!q.main_hand_item_use_duration||!q.is_alive"
+            },
+            {
+              "delay": "q.equipped_item_all_tags('slot.weapon.mainhand','pw:is_semi')&&q.main_hand_item_use_duration&&q.is_alive"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.player.guns_bolt": {
+      "initial_state": "inactive",
+      "states": {
+        "inactive": {
+          "transitions": [
+            {
+              "fire": "q.equipped_item_all_tags('slot.weapon.mainhand','pw:is_bolt')&&q.main_hand_item_use_duration&&q.is_alive"
+            }
+          ]
+        },
+        "fire": {
+          "on_entry": [
+            "/function guns/effect/fire"
+          ],
+          "transitions": [
+            {
+              "inactive": "!q.equipped_item_all_tags('slot.weapon.mainhand','pw:is_bolt')||!q.main_hand_item_use_duration||!q.is_alive"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.player.guns_sight": {
+      "initial_state": "inactive",
+      "states": {
+        "inactive": {
+          "transitions": [
+            {
+              "default": "q.equipped_item_all_tags('slot.weapon.mainhand','pw:is_gun')&&!q.equipped_item_any_tag('slot.weapon.mainhand','pw:has_scope','pw:has_sight')&&!q.property('pw:blocking')&&!q.property('pw:reloading')&&q.is_sneaking&&q.is_alive"
+            },
+            {
+              "sight": "q.equipped_item_any_tag('slot.weapon.mainhand','pw:has_sight')&&!q.property('pw:blocking')&&!q.property('pw:reloading')&&q.is_sneaking&&q.is_alive"
+            },
+            {
+              "scope": "q.equipped_item_any_tag('slot.weapon.mainhand','pw:has_scope')&&!q.property('pw:blocking')&&!q.property('pw:reloading')&&q.is_sneaking&&q.is_alive"
+            }
+          ]
+        },
+        "default": {
+          "transitions": [
+            {
+              "inactive": "!q.equipped_item_all_tags('slot.weapon.mainhand','pw:is_gun')||q.equipped_item_any_tag('slot.weapon.mainhand','pw:has_scope','pw:has_sight')||q.property('pw:blocking')||q.property('pw:reloading')||!q.is_sneaking||!q.is_alive"
+            }
+          ],
+          "on_entry": [
+            "/camerashake add @s 0.08 0.2 rotational",
+            "/playsound effect.gun.ads_in @a[r=20] ~~~ 1 1 0.01",
+            "/effect @s slowness 3600 1 true"
+          ],
+          "on_exit": [
+            "/camerashake add @s 0.08 0.2 rotational",
+            "/playsound effect.gun.ads_out @a[r=20] ~~~ 1 1 0.01",
+            "/effect @s slowness 0 0"
+          ]
+        },
+        "sight": {
+          "transitions": [
+            {
+              "inactive": "!q.equipped_item_any_tag('slot.weapon.mainhand','pw:has_sight')||q.property('pw:blocking')||q.property('pw:reloading')||!q.is_sneaking||!q.is_alive"
+            }
+          ],
+          "on_entry": [
+            "/camerashake add @s 0.08 0.2 rotational",
+            "/playsound effect.gun.lean_in @a[r=20] ~~~ 1 1 0.01",
+            "/effect @s slowness 3600 4 true"
+          ],
+          "on_exit": [
+            "/camerashake add @s 0.08 0.2 rotational",
+            "/playsound effect.gun.lean_out @a[r=20] ~~~ 1 1 0.01",
+            "/effect @s slowness 0 0"
+          ]
+        },
+        "scope": {
+          "transitions": [
+            {
+              "inactive": "!q.equipped_item_any_tag('slot.weapon.mainhand','pw:has_scope')||q.property('pw:blocking')||q.property('pw:reloading')||!q.is_sneaking||!q.is_alive"
+            }
+          ],
+          "on_entry": [
+            "/camerashake add @s 0.08 0.2 rotational",
+            "/playsound effect.gun.lean_in @a[r=20] ~~~ 1 1 0.01",
+            "/effect @s slowness 3600 8 true"
+          ],
+          "on_exit": [
+            "/camerashake add @s 0.08 0.2 rotational",
+            "/playsound effect.gun.lean_out @a[r=20] ~~~ 1 1 0.01",
+            "/effect @s slowness 0 0"
+          ]
+        }
+      }
+    }
+  }
+}

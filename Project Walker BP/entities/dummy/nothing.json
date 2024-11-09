@@ -1,1 +1,27 @@
-{"format_version":"1.21.0","minecraft:entity":{"description":{"identifier":"pw:nothing","is_spawnable":false,"is_summonable":true,"is_experimental":false},"components":{"minecraft:conditional_bandwidth_optimization":{},"minecraft:instant_despawn":{}}}}
+{
+  "format_version": "1.21.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "pw:nothing",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    
+    "components": {
+      "minecraft:conditional_bandwidth_optimization": {},
+      "minecraft:instant_despawn": {},
+      
+      // these two so that it shows up with ESP, in case any are lingering
+      "minecraft:collision_box": {
+        "height": 1,
+        "width": 1
+      },
+      "minecraft:physics": {
+        "has_collision": false,
+        "has_gravity": true,
+        "push_towards_closest_space": false
+      }
+    }
+  }
+}
