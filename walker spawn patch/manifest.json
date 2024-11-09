@@ -6,8 +6,8 @@
         ]
     },
     "header": {
-        "name": "§eWalker Spawn Rules Patch v1 for Project Walker addon by Aplok",
-        "description": "Put above Project Walker addon. Patch that changes walkers to only spawn at light level 7 or less. You need to still have the Project Walker addon installed. Made for v1.8.12 but should work for future versions. By MRxSIR.",
+        "name": "§eWalker Spawn Rules Patch v1.0.1 for Project Walker addon by Aplok",
+        "description": "§ePut above Project Walker addon! §fThis patch makes Walkers spawn at light level 7 and below only. In easy mode, spawn weight is 7 with herd size range of 1-4; in normal mode, spawn weight is 18 with herd size range of 1-7; in hard mode, spawn weight is 25 with herd size range of 3-8. Weight is game's priority to spawn walker vs other mobs. §cYou need to still have the Project Walker addon installed. §fMade for v1.8.12 but should work for future versions. By MRxSIR.",
         "uuid": "8c73a4e7-fb0b-47df-ab0f-ea15309746b4",
         "min_engine_version": [1, 20, 10],
         "version": [
