@@ -1,3 +1,8 @@
+### v1.8.1212:
+ - MRxSIR.
+ - Walker spawn rules for easy and normal have increased spawning.
+ - Villagers can be healed with food, health 20 -> 22 now, and regenerate health at bedtime for 9 seconds.
+
 ### v1.8.1211:
  - MRxSIR.
  - Fix night horde dummy entity despawn rules.
