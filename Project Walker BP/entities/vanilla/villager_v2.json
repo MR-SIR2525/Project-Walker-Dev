@@ -1930,8 +1930,48 @@
         "suffocate_time": 0
       },
       "minecraft:health": {
-        "value": 20,
-        "max": 20
+        "value": 22,
+        "max": 25
+      },
+      "minecraft:healable": {
+        "force_use": false,
+        "items": [
+          {
+            "item": "minecraft:bread",
+            "effects": [{"name": "regeneration"}],
+            "heal_amount": 2
+          },
+          {
+            "item": "minecraft:potato",
+            "effects": [{"name": "regeneration"}],
+            "heal_amount": 2
+          },
+          {
+            "item": "minecraft:baked_potato",
+            "effects": [{"name": "regeneration"}],
+            "heal_amount": 2
+          },
+          {
+            "item": "minecraft:carrot",
+            "effects": [{"name": "regeneration"}],
+            "heal_amount": 2
+          },
+          {
+            "item": "minecraft:porkchop",
+            "effects": [{"name": "regeneration"}],
+            "heal_amount": 4          
+          },
+          {
+            "item": "minecraft:cooked_beef",
+            "effects": [{"name": "regeneration"}],
+            "heal_amount": 5
+          },
+          {
+            "item": "pw:tomato",
+            "effects": [{"name": "regeneration"}],
+            "heal_amount": 2
+          }
+        ]
       },
       "minecraft:conditional_bandwidth_optimization": {
       },
@@ -3230,7 +3270,8 @@
 
       "minecraft:schedule_bed_villager": {
         "remove": { "component_groups": [ "make_and_receive_love", "home_schedule_villager", "gather_schedule_villager", "wander_schedule_villager", "job_specific_goals", "play_schedule_villager", "trade_resupply_component_group" ] },
-        "add": { "component_groups": [ "bed_schedule_villager" ] }
+        "add": { "component_groups": [ "bed_schedule_villager" ] },
+        "trigger": "regenerate_health"
       },
 
       "minecraft:schedule_play_villager": {
@@ -3256,6 +3297,12 @@
       "minecraft:schedule_work_librarian": {
         "remove": { "component_groups": [ "home_schedule_villager", "gather_schedule_villager", "wander_schedule_villager", "bed_schedule_villager", "job_specific_goals", "play_schedule_villager" ] },
         "add": { "component_groups": [ "make_and_receive_love", "work_schedule_librarian" ] }
+      },
+
+      "regenerate_health": {
+        "queue_command": {
+          "command": "effect @s regeneration 9 2 true"
+        }
       },
 
       "minecraft:resupply_trades": {
