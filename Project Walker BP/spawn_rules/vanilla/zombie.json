@@ -5,6 +5,35 @@
       "identifier": "minecraft:zombie",
       "population_control": "monster"
     },
-    "conditions": []
+    "conditions": [
+      {
+        "minecraft:spawns_on_surface": {},
+        "minecraft:brightness_filter": {
+          "min": 0,
+          "max": 7,
+          "adjust_for_weather": true
+        },
+        "minecraft:difficulty_filter": {
+          "min": "easy",
+          "max": "hard"
+        },
+        "minecraft:weight": {
+          "default": 1
+        },
+        "minecraft:herd": {
+          "min_size": 1,
+          "max_size": 3
+        },
+        "minecraft:permute_type": [
+          {
+            "weight": 5,
+            "entity_type": "minecraft:zombie_villager_v2"
+          }
+        ],
+        "minecraft:biome_filter": {
+          "test": "has_biome_tag", "operator": "==", "value": "monster"
+        }
+      }
+    ]
   }
 }

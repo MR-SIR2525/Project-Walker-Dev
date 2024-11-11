@@ -4,7 +4,6 @@
     "description": {
       "identifier": "minecraft:wither_skeleton",
       "population_control": "monster"
-    },
-    "conditions": []
+    }
   }
 }
