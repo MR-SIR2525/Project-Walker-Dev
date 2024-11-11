@@ -1,1 +1,32 @@
-{"format_version":"1.20.10","minecraft:recipe_shaped":{"description":{"identifier":"pw:splint"},"tags":["crafting_table"],"pattern":[" BA","BAB","AB "],"key":{"A":{"item":"pw:rag"},"B":{"item":"minecraft:stick"}},"unlock":[{"item":"minecraft:stick"}],"result":{"item":"pw:splint"}}}
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "pw:splint"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      " BA",
+      "BAB",
+      "AB "
+    ],
+    "key": {
+      "A": {
+        "item": "pw:rag"
+      },
+      "B": {
+        "item": "minecraft:stick"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:stick"
+      }
+    ],
+    "result": {
+      "item": "pw:splint"
+    }
+  }
+}

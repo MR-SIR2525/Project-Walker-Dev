@@ -1,1 +1,29 @@
-{"format_version":"1.20.10","minecraft:recipe_shaped":{"description":{"identifier":"pw:cargo_white"},"tags":["crafting_table"],"pattern":["AAA","A A","A A"],"key":{"A":{"item":"minecraft:white_wool"}},"unlock":[{"item":"minecraft:white_wool"}],"result":{"item":"pw:cargo_white"}}}
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "pw:cargo_white"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "AAA",
+      "A A",
+      "A A"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:white_wool"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:white_wool"
+      }
+    ],
+    "result": {
+      "item": "pw:cargo_white"
+    }
+  }
+}
