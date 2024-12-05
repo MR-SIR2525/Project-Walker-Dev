@@ -42,10 +42,9 @@ system.afterEvents.scriptEventReceive.subscribe(async (event) => {
       `scoreboard players remove @s thirst ${thirstReduction}`
     );
 
-    // seems like check all players when it should really just check self
-    // Sets thirst to 0 for players who have (thirst <= -1)
+    // Sets thirst to 0 if (thirst <= -1)
     player.runCommand(
-      'scoreboard players set @a[scores={thirst=..-1}] thirst 0'
+      'scoreboard players set @s[scores={thirst=..-1}] thirst 0'
     );
   }
 });
