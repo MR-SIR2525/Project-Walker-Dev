@@ -8,7 +8,7 @@
         "url": "https://gabriel-aplok.com/"
     },
     "header": {
-        "name": "Project Walker RP v1.8.1213",
+        "name": "Project Walker RP v1.8.1214",
         "description": "Produced by §eGabriel Aplok§r and §cHSK§r.\nThe Project Walker is here! Explore a run-down, overgrown world taken over by zombies. To survive, you must scavenge for food and weapons, and fight off the zombies! Walkers spawn at light level 7 or less. Custom Project Walker version.",
         "uuid": "a9c79058-33f4-42bf-847b-3d1772c233b1",
         "pack_scope": "world",
@@ -16,7 +16,7 @@
         "version": [
             1,
             8,
-            1213
+            1214
         ]
     },
     "modules": [
@@ -25,20 +25,19 @@
             "uuid": "a6aac906-689d-4806-a031-9044ac0046ad",
             "version": [
                 1,
-                0,
-                0
+                8,
+                1214
             ]
         }
     ],
     "dependencies": [
         // commented out so that this RP can be used by numerous BP versions.
-
         {
             "uuid": "d60655ba-ef31-485d-945d-d94541d60cd0",
             "version": [
                 1,
                 8,
-                1213
+                1214
             ]
         }
     ]
