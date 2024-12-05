@@ -71,10 +71,11 @@ world.beforeEvents.itemUseOn.subscribe((event) => {
 world.afterEvents.itemCompleteUse.subscribe((event) => {
   const player = event.source;
   const item = event.itemStack;
+  // remember that total possible thirst in player.json = 20
 
   if (item.getTags().includes('pw:is_drink_high')) {
     player.runCommand(
-      'scoreboard players add @s[scores={thirst=0..20}] thirst 6'  //consider increasing
+      'scoreboard players add @s[scores={thirst=0..20}] thirst 7'  //only the canteen, as far as I know
     );
   }
   else if (item.getTags().includes('pw:is_drink_medium')) {
