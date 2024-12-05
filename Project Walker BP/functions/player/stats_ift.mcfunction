@@ -21,4 +21,4 @@ title @s[m=!c, scores={thirst=18}] title hud.thirst_ift_18
 title @s[m=!c, scores={thirst=19}] title hud.thirst_ift_19
 title @s[m=!c, scores={thirst=20..}] title hud.thirst_ift_20
 scoreboard players set @a[scores={thirst=..-1}] thirst 0
-scoreboard players set @a[scores={thirst=21..}] thirst 20
+scoreboard players set @a[scores={thirst=25..}] thirst 24

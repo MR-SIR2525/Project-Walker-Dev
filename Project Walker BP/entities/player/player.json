@@ -925,7 +925,7 @@
               "command": [
                 "playsound mob.human.death @a[rm=0, r=10] ^^^ 100 1 0.01",
                 "playsound mob.human.death_distant @a[rm=11, r=200] ^^^ 100 1 0.01",
-                "scoreboard players set @s thirst 20",
+                "scoreboard players set @s thirst 24",
                 "scoreboard players set @s blood 20",
                 "scoreboard players add @s deaths 1",
                 "execute as @s[tag=infection] run summon pw:walker ^^^"

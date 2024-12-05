@@ -3,7 +3,7 @@ gamerule recipesunlock false
 gamerule showdaysplayed true
 gamerule spawnradius 32
 gamerule sendcommandfeedback false
-scoreboard players set @s thirst 20
+scoreboard players set @s thirst 24
 scoreboard players set @s blood 20
 scoreboard players set @s deaths 0
 scoreboard players set @s ak12 30
