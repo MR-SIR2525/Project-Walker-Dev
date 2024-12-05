@@ -1,8 +1,169 @@
-/**
-* Hello, u're looking to steal my code, good luck!
-* If I were you I would at least ask permission before that,
-* I would be happy instead of you stealing my code and having to take drastic measures.
-* Well, thank you, Gabriel Aplok.
-*/
+import { system, world } from '@minecraft/server';
 
-const _0x3e8c0f=_0x3913;(function(_0x28c91e,_0xa29ef4){const _0x1a98a7=_0x3913,_0x5c7140=_0x28c91e();while(!![]){try{const _0x3ab7d7=parseInt(_0x1a98a7(0xae))/0x1*(-parseInt(_0x1a98a7(0xb9))/0x2)+-parseInt(_0x1a98a7(0xcd))/0x3*(-parseInt(_0x1a98a7(0x96))/0x4)+-parseInt(_0x1a98a7(0xa3))/0x5*(-parseInt(_0x1a98a7(0xd3))/0x6)+-parseInt(_0x1a98a7(0xcf))/0x7+-parseInt(_0x1a98a7(0x97))/0x8+parseInt(_0x1a98a7(0xa6))/0x9+parseInt(_0x1a98a7(0xab))/0xa;if(_0x3ab7d7===_0xa29ef4)break;else _0x5c7140['push'](_0x5c7140['shift']());}catch(_0x3f73c8){_0x5c7140['push'](_0x5c7140['shift']());}}}(_0x4449,0x7a218));import{system,world}from'@minecraft/server';const WATER_FOODS=[_0x3e8c0f(0x95),_0x3e8c0f(0x9a),_0x3e8c0f(0xaf),_0x3e8c0f(0xd7),_0x3e8c0f(0xcc),'minecraft:beetroot','minecraft:potato',_0x3e8c0f(0xd8),_0x3e8c0f(0x9e),_0x3e8c0f(0xc2),_0x3e8c0f(0xd4),_0x3e8c0f(0xbc),_0x3e8c0f(0xa1),_0x3e8c0f(0xb2),'minecraft:beetroot_soup',_0x3e8c0f(0xb8),'minecraft:glow_berries'];system[_0x3e8c0f(0xc9)][_0x3e8c0f(0xb5)][_0x3e8c0f(0xc0)](async _0x125c59=>{const _0x541532=_0x3e8c0f;if(_0x125c59['id']==='pw:thirst_countdown'){const _0x5071b9=_0x125c59[_0x541532(0xd2)];let _0x4606fe=0x1;if(_0x5071b9['isSprinting']||_0x5071b9[_0x541532(0xa7)]||_0x5071b9[_0x541532(0xd6)]||_0x5071b9['hasTag']('infection'))_0x4606fe=0x2;if(_0x5071b9['isInWater'])_0x4606fe=0x0;_0x5071b9[_0x541532(0xc5)](_0x541532(0xac)+_0x4606fe),_0x5071b9[_0x541532(0xc5)]('scoreboard\x20players\x20set\x20@a[scores={thirst=..-1}]\x20thirst\x200');}}),world[_0x3e8c0f(0xc9)][_0x3e8c0f(0xda)][_0x3e8c0f(0xc0)](_0x2a2e5a=>{const _0x55bb79=_0x3e8c0f,_0x30f1e4=_0x2a2e5a[_0x55bb79(0xbe)],_0x18c7ac=_0x2a2e5a[_0x55bb79(0xb4)];_0x18c7ac[_0x55bb79(0xc7)]()[_0x55bb79(0xc4)]('pw:is_closed_food')&&(_0x30f1e4[_0x55bb79(0x9b)](_0x55bb79(0x94)+_0x18c7ac[_0x55bb79(0xa4)]+_0x55bb79(0x9d)),_0x30f1e4[_0x55bb79(0x9b)]('playsound\x20armor.equip_iron\x20@s[r=10]\x20~~~\x201\x201\x200.01'));}),world['afterEvents'][_0x3e8c0f(0xa5)][_0x3e8c0f(0xc0)](_0x4b0876=>{const _0x4238f5=_0x3e8c0f,_0x31d67d=_0x4b0876[_0x4238f5(0xbe)],_0x47f40f=_0x4b0876[_0x4238f5(0xb4)];if(_0x47f40f[_0x4238f5(0xc7)]()[_0x4238f5(0xc4)](_0x4238f5(0xbb)))_0x31d67d['runCommand']('scoreboard\x20players\x20add\x20@s[scores={thirst=0..20}]\x20thirst\x203');else{if(_0x47f40f['getTags']()[_0x4238f5(0xc4)](_0x4238f5(0x98))||WATER_FOODS[_0x4238f5(0xc4)](_0x47f40f[_0x4238f5(0xa4)]))_0x31d67d[_0x4238f5(0x9b)](_0x4238f5(0xc1));else{if(_0x47f40f[_0x4238f5(0xc7)]()[_0x4238f5(0xc4)](_0x4238f5(0x9f)))_0x31d67d[_0x4238f5(0x9b)](_0x4238f5(0xba));else _0x47f40f[_0x4238f5(0xc7)]()[_0x4238f5(0xc4)](_0x4238f5(0xa0))&&_0x31d67d[_0x4238f5(0x9b)]('scoreboard\x20players\x20add\x20@s[scores={thirst=0..20}]\x20thirst\x206');}}_0x47f40f[_0x4238f5(0xc7)]()[_0x4238f5(0xc4)]('pw:is_energy')&&_0x31d67d['runCommand'](_0x4238f5(0xbd));if(_0x47f40f[_0x4238f5(0xc7)]()[_0x4238f5(0xc4)](_0x4238f5(0xa9))){if(_0x47f40f[_0x4238f5(0xa4)]===_0x4238f5(0xcb))_0x31d67d[_0x4238f5(0x9b)](_0x4238f5(0xb3)),_0x31d67d['runCommand'](_0x4238f5(0xc3)),_0x31d67d[_0x4238f5(0x9b)]('effect\x20@s\x20clear'),_0x31d67d[_0x4238f5(0x9b)]('effect\x20@s\x20instant_health\x201\x201\x20true');else{if(_0x47f40f[_0x4238f5(0xa4)]===_0x4238f5(0xaa))_0x31d67d[_0x4238f5(0x9b)](_0x4238f5(0xb3)),_0x31d67d[_0x4238f5(0x9b)](_0x4238f5(0xb7));else{if(_0x47f40f[_0x4238f5(0xa4)]==='pw:rag')_0x31d67d['runCommand'](_0x4238f5(0xb3)),_0x31d67d[_0x4238f5(0x9b)](_0x4238f5(0xb7));else{if(_0x47f40f[_0x4238f5(0xa4)]===_0x4238f5(0xd1))_0x31d67d['runCommand']('playsound\x20armor.equip_leather\x20@s[r=10]\x20~~~\x201\x201\x200.01'),_0x31d67d[_0x4238f5(0x9b)](_0x4238f5(0xc6)),_0x31d67d['runCommand']('event\x20entity\x20@s\x20pw:remove_broken_leg');else{if(_0x47f40f['typeId']===_0x4238f5(0xad))_0x31d67d[_0x4238f5(0x9b)](_0x4238f5(0xb3)),_0x31d67d[_0x4238f5(0x9b)](_0x4238f5(0xb0));else _0x47f40f['typeId']===_0x4238f5(0xb1)&&(_0x31d67d[_0x4238f5(0x9b)](_0x4238f5(0xb3)),_0x31d67d[_0x4238f5(0x9b)](_0x4238f5(0xd0)));}}}}}}),world[_0x3e8c0f(0xc8)][_0x3e8c0f(0xd5)][_0x3e8c0f(0xc0)](_0x5d06c9=>{const _0x4455e5=_0x3e8c0f,_0x11059e=_0x5d06c9[_0x4455e5(0xbe)],_0x99853b=_0x5d06c9[_0x4455e5(0xb4)],_0x4eaa50=_0x5d06c9[_0x4455e5(0xce)];system['run'](()=>{const _0x12a042=_0x4455e5;if(_0x99853b[_0x12a042(0xc7)]()[_0x12a042(0xc4)](_0x12a042(0xb6))&&(_0x4eaa50[_0x12a042(0xa4)]==='minecraft:water'||_0x4eaa50[_0x12a042(0xa4)]==='minecraft:flowing_water'||_0x4eaa50['hasTag'](_0x12a042(0xd9)))){if(_0x99853b[_0x12a042(0xa4)]===_0x12a042(0x9c))_0x11059e[_0x12a042(0x9b)](_0x12a042(0xbf)),_0x11059e[_0x12a042(0x9b)]('playsound\x20bucket.fill_water\x20@a[r=20]\x20~~~\x201\x201\x200.01');else _0x99853b[_0x12a042(0xa4)]===_0x12a042(0xca)&&(_0x11059e[_0x12a042(0x9b)](_0x12a042(0xa2)),_0x11059e[_0x12a042(0x9b)](_0x12a042(0x99)));_0x4eaa50['hasTag'](_0x12a042(0xd9))&&_0x11059e[_0x12a042(0x9b)](_0x12a042(0xa8)+_0x4eaa50['x']+'\x20'+_0x4eaa50['y']+'\x20'+_0x4eaa50['z']+'\x201\x201\x200.01'),_0x5d06c9['cancel'];}});});function _0x3913(_0x51875a,_0x371d35){const _0x44494c=_0x4449();return _0x3913=function(_0x3913b0,_0x285b3){_0x3913b0=_0x3913b0-0x94;let _0x25755a=_0x44494c[_0x3913b0];return _0x25755a;},_0x3913(_0x51875a,_0x371d35);}function _0x4449(){const _0x468560=['typeId','itemCompleteUse','5735538SQNCnl','isFalling','playsound\x20block.water_pump.use\x20@a[r=20]\x20','pw:is_medical','pw:bandage','1874550bgZILc','scoreboard\x20players\x20remove\x20@s[m=!c,\x20scores={thirst=1..20}]\x20thirst\x20','pw:syringe_cure','1LVtIbi','minecraft:golden_apple','event\x20entity\x20@s\x20pw:remove_infection','pw:syringe_morphine','minecraft:suspicious_stew','playsound\x20armor.equip_leather\x20@s[r=10]\x20~~~\x201\x201\x200.01','itemStack','scriptEventReceive','pw:use_water_pump_block','event\x20entity\x20@s\x20pw:remove_bleeding','minecraft:sweet_berries','22346ZjVUmv','scoreboard\x20players\x20add\x20@s[scores={thirst=0..20}]\x20thirst\x204','pw:is_drink','minecraft:mushroom_stew','effect\x20@s\x20speed\x205\x202\x20true','source','replaceitem\x20entity\x20@s[hasitem={item=pw:water_bottle_empty,\x20location=slot.weapon.mainhand}]\x20slot.weapon.mainhand\x200\x20pw:water_bottle','subscribe','scoreboard\x20players\x20add\x20@s[scores={thirst=0..20}]\x20thirst\x202','minecraft:honey_bottle','event\x20entity\x20@s\x20pw:reset_stats','includes','runCommandAsync','playsound\x20use.wood\x20@s[r=10]\x20~~~\x201\x201\x200.01','getTags','beforeEvents','afterEvents','pw:water_canteen_empty','pw:aidkit','minecraft:glistering_melon_slice','12veIJJd','block','4016250WoGqpt','event\x20entity\x20@s\x20pw:remove_broken_leg','pw:splint','sourceEntity','3201294eAHSTZ','minecraft:potion','itemUseOn','isClimbing','minecraft:melon_slice','minecraft:baked_potato','pw:water_pump','itemUse','replaceitem\x20entity\x20@s\x20slot.weapon.mainhand\x200\x20','minecraft:apple','520820xlrvBv','6351480xMSgZW','pw:is_drink_low','playsound\x20bucket.fill_water\x20@a[r=20]\x20~~~\x201\x201\x200.01','minecraft:enchanted_golden_apple','runCommand','pw:water_bottle_empty','_open\x201\x200','minecraft:poisonous_potato','pw:is_drink_medium','pw:is_drink_high','minecraft:rabbit_stew','replaceitem\x20entity\x20@s[hasitem={item=pw:water_canteen_empty,\x20location=slot.weapon.mainhand}]\x20slot.weapon.mainhand\x200\x20pw:water_canteen','5HXzekt'];_0x4449=function(){return _0x468560;};return _0x4449();}
+// Define an array of water-related food items
+const WATER_FOODS = [
+  'minecraft:melon_slice',
+  'minecraft:sweet_berries',
+  'minecraft:honey_bottle',
+  'minecraft:rabbit_stew',
+  'minecraft:apple',
+  'minecraft:beetroot',
+  'minecraft:potato',
+  'minecraft:beetroot_soup',
+  'minecraft:glow_berries',
+  'minecraft:baked_potato',
+  'minecraft:mushroom_stew',
+  'minecraft:suspicious_stew',
+  'minecraft:golden_apple',
+  'minecraft:enchanted_golden_apple',
+];
+
+// Event handler for a custom script event named 'pw:thirst_countdown'
+system.afterEvents.scriptEventReceive.subscribe(async (event) => {
+  if (event.id === 'pw:thirst_countdown') {
+    const player = event.sourceEntity;
+    let thirstReduction = 1;
+
+    // Do not reduce thirst if the player is in water
+    if (player.isInWater) {
+      thirstReduction = 0;
+    }
+    // Increase thirst reduction if the player is performing certain actions
+    else if (player.isSprinting ||
+      player.isClimbing ||
+      player.isFalling ||
+      player.hasTag('infection')
+    ) {
+      thirstReduction = 2;
+    }
+
+    // Adjust the player's 'thirst' scoreboard value
+    player.runCommand(
+      `scoreboard players remove @s thirst ${thirstReduction}`
+    );
+
+    // seems like check all players when it should really just check self
+    // Sets thirst to 0 for players who have (thirst <= -1)
+    player.runCommand(
+      'scoreboard players set @a[scores={thirst=..-1}] thirst 0'
+    );
+  }
+});
+
+// Event handler for item use on block
+world.beforeEvents.itemUseOn.subscribe((event) => {
+  const player = event.source;
+  const item = event.itemStack;
+
+  // If the item has a custom tag 'pw:is_closed_food'
+  if (item.getTags().includes('pw:is_closed_food')) {
+    // Open the food item (replace with opened version)
+    player.runCommand(
+      `replaceitem entity @s slot.weapon.mainhand 0 ${item.typeId}_open 1 0`
+    );
+    player.runCommand(
+      'playsound armor.equip_iron @s[r=10] ~~~ 1 1 0.01'
+    );
+  }
+});
+
+// Event handler for item complete use (e.g., when a player finishes eating/drinking)
+world.afterEvents.itemCompleteUse.subscribe((event) => {
+  const player = event.source;
+  const item = event.itemStack;
+
+  if (item.getTags().includes('pw:is_drink_high')) {
+    player.runCommand(
+      'scoreboard players add @s[scores={thirst=0..20}] thirst 6'  //consider increasing
+    );
+  } 
+  else if (item.getTags().includes('pw:is_drink_low') ||
+            WATER_FOODS.includes(item.typeId)) {
+    player.runCommand(
+      'scoreboard players add @s[scores={thirst=0..20}] thirst 2'
+    );
+  } 
+  else if (item.getTags().includes('pw:is_drink_medium')) {
+    player.runCommand(
+      'scoreboard players add @s[scores={thirst=0..20}] thirst 4'
+    );
+  }
+
+  // Apply effects if the item has certain tags
+  if (item.getTags().includes('pw:is_energy')) {
+    player.runCommand('effect @s speed 5 2 true');
+  }
+
+  // Medical items handling
+  if (item.getTags().includes('pw:is_medical')) {
+    if (item.typeId === 'pw:aidkit') {
+      player.runCommand('event entity @s pw:reset_stats');
+      player.runCommand('effect @s clear');
+      player.runCommand('effect @s instant_health 1 1 true');
+    } 
+    else if (item.typeId === 'pw:bandage') {
+      player.runCommand('event entity @s pw:reset_stats');
+      player.runCommand('event entity @s pw:remove_bleeding');
+    } 
+    else if (item.typeId === 'pw:rag') {
+      player.runCommand('event entity @s pw:reset_stats');
+      player.runCommand('event entity @s pw:remove_bleeding');
+    } 
+    else if (item.typeId === 'pw:splint') {
+      player.runCommand(
+        'playsound armor.equip_leather @s[r=10] ~~~ 1 1 0.01'
+      );
+      player.runCommand('event entity @s pw:reset_stats');
+      player.runCommand('event entity @s pw:remove_broken_leg');
+    } 
+    else if (item.typeId === 'pw:syringe_morphine') {
+      player.runCommand('event entity @s pw:reset_stats');
+      player.runCommand('effect @s resistance 600 2 true');
+    } 
+    else if (item.typeId === 'pw:syringe_cure') {
+      player.runCommand('event entity @s pw:reset_stats');
+      player.runCommand('event entity @s pw:remove_infection');
+    }
+  }
+});
+
+// Event handler for item use on a block (e.g., using an item on a water source)
+world.beforeEvents.itemUseOn.subscribe((event) => {
+  const player = event.source;
+  const item = event.itemStack;
+  const block = event.block;
+
+  system.run(() => {
+    if (
+      item.getTags().includes('pw:use_water_pump_block') &&
+      (block.typeId === 'minecraft:water' ||
+        block.typeId === 'minecraft:flowing_water' ||
+        block.hasTag('pw:water_pump'))
+    ) {
+      if (item.typeId === 'pw:water_bottle_empty') {
+        player.runCommand(
+          'replaceitem entity @s[hasitem={item=pw:water_bottle_empty, location=slot.weapon.mainhand}] slot.weapon.mainhand 0 pw:water_bottle'
+        );
+        player.runCommand(
+          'playsound bucket.fill_water @a[r=20] ~~~ 1 1 0.01'
+        );
+      } else if (item.typeId === 'pw:water_canteen_empty') {
+        player.runCommand(
+          'replaceitem entity @s[hasitem={item=pw:water_canteen_empty, location=slot.weapon.mainhand}] slot.weapon.mainhand 0 pw:water_canteen'
+        );
+        player.runCommand(
+          'playsound use.wood @s[r=10] ~~~ 1 1 0.01'
+        );
+      }
+
+      if (block.hasTag('pw:water_pump')) {
+        player.runCommand(
+          'playsound block.water_pump.use @a[r=20] ~~~ 1 1 0.01'
+        );
+      }
+
+      // Cancel the default behavior
+      event.cancel = true;
+    }
+  });
+});
