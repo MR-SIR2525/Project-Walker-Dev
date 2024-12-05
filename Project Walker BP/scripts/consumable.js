@@ -75,23 +75,17 @@ world.afterEvents.itemCompleteUse.subscribe((event) => {
 
   if (item.getTags().includes('pw:is_drink_high')) {
     player.runCommand(
-      'scoreboard players add @s[scores={thirst=0..20}] thirst 7'  //only the canteen, as far as I know
+      'scoreboard players add @s[scores={thirst=0..24}] thirst 7'  //only the canteen, as far as I know
     );
   }
   else if (item.getTags().includes('pw:is_drink_medium')) {
     player.runCommand(
-      'scoreboard players add @s[scores={thirst=0..20}] thirst 4'
+      'scoreboard players add @s[scores={thirst=0..24}] thirst 4'
     );
   }
-  else if (item.getTags().includes('pw:is_drink_low')) {
+  else if (item.getTags().includes('pw:is_drink_low') || WATER_FOODS.includes(item.typeId)) {
     player.runCommand(
-      'scoreboard players add @s[scores={thirst=0..20}] thirst 2'
-    );
-  }
-
-  if (WATER_FOODS.includes(item.typeId)) {
-    player.runCommand(
-      'scoreboard players add @s[scores={thirst=0..20}] thirst 2'
+      'scoreboard players add @s[scores={thirst=0..24}] thirst 2'
     );
   }
 
