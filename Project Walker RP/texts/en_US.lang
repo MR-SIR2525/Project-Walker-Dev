@@ -248,8 +248,9 @@ tile.water_pump.name=Water Pump
 tile.wooden_barricade.name=Wooden Barricade
 
 ## Game
-game.message.watermark=Project Walker [v1.8.12]
-game.message.welcome_1=§lProject §4Walker §fV1.8.12
+game.message.watermark=Project Walker [v1.8.1213]
+game.message.welcome_1=§lProject §4Walker §fV1.8.1213
+
 game.message.welcome_2=Owner/Main-Developer: §b@GabrielAplok
 game.message.welcome_3=Founder/Developer: §6@GabrielMODGuy
 game.message.welcome_4=Website: §ahttps://gabriel-aplok.com/projects/project-walker
