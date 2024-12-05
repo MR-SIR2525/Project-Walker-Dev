@@ -83,7 +83,7 @@ world.afterEvents.itemCompleteUse.subscribe((event) => {
       'scoreboard players add @s[scores={thirst=0..24}] thirst 4'
     );
   }
-  else if (item.getTags().includes('pw:is_drink_low') || WATER_FOODS.includes(item.typeId)) {
+  else if (item.getTags().includes('pw:is_drink_low') || WATER_FOODS.has(item.typeId)) {
     player.runCommand(
       'scoreboard players add @s[scores={thirst=0..24}] thirst 2'
     );
