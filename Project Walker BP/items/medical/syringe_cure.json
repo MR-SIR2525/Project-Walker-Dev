@@ -1,1 +1,31 @@
-{"format_version":"1.21.0","minecraft:item":{"description":{"identifier":"pw:syringe_cure","menu_category":{"category":"items","group":"itemGroup.name.medical"}},"components":{"minecraft:display_name":{"value":"item.syringe_cure.name"},"minecraft:food":{"can_always_eat":true,"using_converts_to":"pw:empty_syringe"},"minecraft:use_modifiers":{"use_duration":1.6},"minecraft:tags":{"tags":["pw:is_medical"]},"minecraft:icon":"syringe_cure","minecraft:use_animation":"eat"}}}
+{
+  "format_version": "1.21.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "pw:syringe_cure",
+      "menu_category": {
+        "category": "items",
+        "group": "itemGroup.name.medical"
+      }
+    },
+    "components": {
+      "minecraft:display_name": {
+        "value": "item.syringe_cure.name"
+      },
+      "minecraft:food": {
+        "can_always_eat": true,
+        "using_converts_to": "pw:empty_syringe"
+      },
+      "minecraft:use_modifiers": {
+        "use_duration": 1.6
+      },
+      "minecraft:tags": {
+        "tags": [
+          "pw:is_medical"
+        ]
+      },
+      "minecraft:icon": "syringe_cure",
+      "minecraft:use_animation": "eat"
+    }
+  }
+}

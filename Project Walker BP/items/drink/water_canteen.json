@@ -1,1 +1,33 @@
-{"format_version":"1.21.0","minecraft:item":{"description":{"identifier":"pw:water_canteen","menu_category":{"category":"items","group":"itemGroup.name.drink"}},"components":{"minecraft:food":{"can_always_eat":true,"using_converts_to":"pw:water_canteen_empty"},"minecraft:display_name":{"value":"item.water_canteen.name"},"minecraft:use_modifiers":{"use_duration":2},"minecraft:tags":{"tags":["pw:is_drink","pw:is_drink_high"]},"minecraft:icon":"water_canteen","minecraft:use_animation":"drink"}}}
+{
+  "format_version": "1.21.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "pw:water_canteen",
+      "menu_category": {
+        "category": "items",
+        "group": "itemGroup.name.drink"
+      }
+    },
+    
+    "components": {
+      "minecraft:food": {
+        "can_always_eat": true,
+        "using_converts_to": "pw:water_canteen_empty"
+      },
+      "minecraft:display_name": {
+        "value": "item.water_canteen.name"
+      },
+      "minecraft:use_modifiers": {
+        "use_duration": 2
+      },
+      "minecraft:tags": {
+        "tags": [
+          "pw:is_drink",
+          "pw:is_drink_high"
+        ]
+      },
+      "minecraft:icon": "water_canteen",
+      "minecraft:use_animation": "drink"
+    }
+  }
+}
