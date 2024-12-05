@@ -1,6 +1,12 @@
 ### v1.8.1213:
  - MRxSIR.
- - 
+ - Sodas count as low-tier drinks now to restore thirst by a little bit.
+ - High-tier drinks (canteen) count restore 7 now, up from 6, thirst points.
+ - Canteen takes 2.9 seconds to consume, up from 2.
+ - Max thirst is now 24 instead of 20.
+ - Villagers will recognize bandits now and are able to avoid them.
+    - Helpful Villagers will get the same upgrade.
+ - Watermark updated to 1.8.1213
 
 ### v1.8.1212:
  - MRxSIR.
