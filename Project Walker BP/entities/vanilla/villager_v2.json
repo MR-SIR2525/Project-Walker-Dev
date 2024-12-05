@@ -2128,6 +2128,7 @@
                 {"test": "is_family", "subject": "other", "value": "zombie"},
                 {"test": "is_family", "subject": "other", "value": "zombie_villager"},
                 {"test": "is_family", "subject": "other", "value": "illager"},
+                {"test": "is_family", "subject": "other", "value": "pillager"},
                 {"test": "is_family", "subject": "other", "value": "vex"},
                 {"test": "is_family", "subject": "other", "value": "zoglin"}
               ]
