@@ -1,7 +1,8 @@
 import { system, world } from '@minecraft/server';
 
-// Define an array of water-related food items
-const WATER_FOODS = [
+// Define a set of water-related food items
+//  - (was an array, set is faster due to hash table lookup)
+const WATER_FOODS = new Set([
   'minecraft:melon_slice',
   'minecraft:sweet_berries',
   'minecraft:honey_bottle',
@@ -16,7 +17,7 @@ const WATER_FOODS = [
   'minecraft:suspicious_stew',
   'minecraft:golden_apple',
   'minecraft:enchanted_golden_apple',
-];
+]);
 
 // Event handler for a custom script event named 'pw:thirst_countdown'
 system.afterEvents.scriptEventReceive.subscribe(async (event) => {
@@ -30,10 +31,10 @@ system.afterEvents.scriptEventReceive.subscribe(async (event) => {
     }
     // Increase thirst reduction if the player is performing certain actions
     else if (player.isSprinting ||
-      player.isClimbing ||
-      player.isFalling ||
-      player.hasTag('infection')
-    ) {
+            player.isClimbing ||
+            player.isFalling ||
+            player.hasTag('infection')) 
+    {
       thirstReduction = 2;
     }
 
