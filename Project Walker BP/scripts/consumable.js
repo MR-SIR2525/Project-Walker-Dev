@@ -76,16 +76,21 @@ world.afterEvents.itemCompleteUse.subscribe((event) => {
     player.runCommand(
       'scoreboard players add @s[scores={thirst=0..20}] thirst 6'  //consider increasing
     );
-  } 
-  else if (item.getTags().includes('pw:is_drink_low') ||
-            WATER_FOODS.includes(item.typeId)) {
-    player.runCommand(
-      'scoreboard players add @s[scores={thirst=0..20}] thirst 2'
-    );
-  } 
+  }
   else if (item.getTags().includes('pw:is_drink_medium')) {
     player.runCommand(
       'scoreboard players add @s[scores={thirst=0..20}] thirst 4'
+    );
+  }
+  else if (item.getTags().includes('pw:is_drink_low')) {
+    player.runCommand(
+      'scoreboard players add @s[scores={thirst=0..20}] thirst 2'
+    );
+  }
+
+  if (WATER_FOODS.includes(item.typeId)) {
+    player.runCommand(
+      'scoreboard players add @s[scores={thirst=0..20}] thirst 2'
     );
   }
 
