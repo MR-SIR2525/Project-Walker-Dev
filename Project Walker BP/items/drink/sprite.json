@@ -1,1 +1,33 @@
-{"format_version":"1.21.0","minecraft:item":{"description":{"identifier":"pw:sprite","menu_category":{"category":"items","group":"itemGroup.name.drink"}},"components":{"minecraft:food":{"nutrition":1,"can_always_eat":true,"using_converts_to":"pw:empty_can"},"minecraft:display_name":{"value":"item.sprite.name"},"minecraft:use_modifiers":{"use_duration":1.6},"minecraft:tags":{"tags":["pw:is_drink"]},"minecraft:icon":"sprite","minecraft:use_animation":"drink"}}}
+{
+  "format_version": "1.21.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "pw:sprite",
+      "menu_category": {
+        "category": "items",
+        "group": "itemGroup.name.drink"
+      }
+    },
+    "components": {
+      "minecraft:food": {
+        "nutrition": 1,
+        "can_always_eat": true,
+        "using_converts_to": "pw:empty_can"
+      },
+      "minecraft:display_name": {
+        "value": "item.sprite.name"
+      },
+      "minecraft:use_modifiers": {
+        "use_duration": 1.6
+      },
+      "minecraft:tags": {
+        "tags": [
+          "pw:is_drink",
+          "pw:is_drink_low"
+        ]
+      },
+      "minecraft:icon": "sprite",
+      "minecraft:use_animation": "drink"
+    }
+  }
+}

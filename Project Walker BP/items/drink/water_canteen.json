@@ -18,7 +18,7 @@
         "value": "item.water_canteen.name"
       },
       "minecraft:use_modifiers": {
-        "use_duration": 2
+        "use_duration": 2.9
       },
       "minecraft:tags": {
         "tags": [
