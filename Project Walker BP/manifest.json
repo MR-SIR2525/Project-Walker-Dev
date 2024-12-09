@@ -8,7 +8,7 @@
         "url": "https://gabriel-aplok.com/"
     },
     "header": {
-        "name": "Project Walker BP v1.8.1214",
+        "name": "Project Walker BP v1.8.1215",
         "description": "Produced by §eGabriel Aplok§r and §cHSK§r.\nThe Project Walker is here! Explore a run-down, overgrown world taken over by zombies. To survive, you must scavenge for food and weapons, and fight off the zombies! Custom version: Walkers spawn at light level 7 or less. Easy mode: spawn weight 7, herd size 1-4. Normal mode: spawn weight 18, herd size 1-7. Hard mode: spawn weight 25, herd size 3-8.",
         "uuid": "d60655ba-ef31-485d-945d-d94541d60cd0",
         "pack_scope": "world",
@@ -16,7 +16,7 @@
         "version": [
             1,
             8,
-            1214
+            1215
         ]
     },
     "modules": [
@@ -26,7 +26,7 @@
             "version": [
                 1,
                 8,
-                1214
+                1215
             ]
         },
         {
@@ -37,7 +37,7 @@
             "version": [
                 1,
                 8,
-                1214
+                1215
             ]
         }
     ],
@@ -49,7 +49,7 @@
             "version": [
                 1,
                 8,
-                1214
+                1215
             ]
         },
         {
