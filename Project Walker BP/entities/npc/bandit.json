@@ -90,6 +90,7 @@
         "family": [
           "pillager",
           "bandit",
+          "monster",
           "human",
           "mob"
         ]
